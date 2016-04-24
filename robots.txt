@@ -1,0 +1,7 @@
+User-agent Googlebot
+Disallow: /index.php
+
+User-agent: *
+Disallow: /
+
+
