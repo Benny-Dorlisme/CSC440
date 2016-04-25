@@ -146,7 +146,7 @@
 	}
 	#page_header
 	{
-		background-color:rgb(59,89,152);
+		 background-color:#232C32; 
 		margin:0px; 
 		padding:0px;
 		border:0px;
@@ -209,7 +209,8 @@
 		 margin: 0 auto;
 		 width:80%; 
 		 color:white; 
-		 background-color:#232C32; 
+		
+		 background-color:rgb(59,89,152);
 		 overflow:scroll; 
 		 overflow-x:hidden; 
 		 font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;

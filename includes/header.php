@@ -13,6 +13,7 @@ include("functions.php");
         <script type="text/javascript" src="javascript/date.js"></script>
  		<script type="text/javascript" src="javascript/ajax.js"></script>
         <link type="text/css" rel="stylesheet" href="css/index.css">
+        <link type="text/css" rel="stylesheet" href="css/svganimations.css">
         
         
     </head>

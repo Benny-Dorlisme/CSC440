@@ -1,26 +1,33 @@
 <?php
 include("includes/header.php");
-
+include("svg/contactinfo.svg.php");
+include("svg/technicalskills.svg.php");
 echo("
 	<section id='page_content'>
 	<header>
-	
+		<div>
+		<div>
+			{$contactinfo_image}
+			<p>
+				251 Osborn St Brooklyn, NY 11212
+				<br/>
+				BennyDorlisme@gmail.com
+				<a href='Benny_Dorlisme_resume.docx'>Download Resume</a>
+			</p>
+		<div>
+		
+	<div>
 	</header>
 	<div>
 		<div>
-			<img src='/img/contactinfo.svg' />
+			{$technicalskills_image}
 		<div>
 	<div>
 	<footer>
 	</footer>
-        <p style=' width:130px; margin: 0 auto;'><a href='Benny_Dorlisme_resume.docx'>Download Resume</a></p>
+
        <article id='resume' style='border:solid 2px;padding:0 100px 0 100px; margin:0 30px 0 30px;'>
 
-<h1 style=' width:175px;font-weight:bold; margin:0 auto;'>Benny Dorlisme</h1>
-
-<nav><ul><li style='display:inline;'>251 Osborn St Apt 4I Brooklyn, NY 11212 | </li> <li style='display:inline; '>(347)369-6540 |</li> <li style='display:inline; '>  benny.dorlisme0114@yearup.org</li></ul></nav>
-
-<hr/>
 <p style=' width:300px;font-weight:bold; margin:0 auto;'>TECHNICAL and PROFESSIONAL SKILLS</p>
 
 <p style=' width:300px;font-weight:bold; margin:0 auto;'>Computer Skills</p>
