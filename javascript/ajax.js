@@ -62,7 +62,7 @@ function makeComment()
 	
 	var parent = document.getElementsByTagName("article");
 	
-	http_request.open("GET","php/comment.php?fname=" + fname + "&lname=" + lname + "&comment=" + comment +"&year="+ year +"&date=" + day + "&month=" + month + "&second=" + second + "&hour=" + hour + "&minute=" + minute,true);
+	http_request.open("GET","comment.php?fname=" + fname + "&lname=" + lname + "&comment=" + comment +"&year="+ year +"&date=" + day + "&month=" + month + "&second=" + second + "&hour=" + hour + "&minute=" + minute,true);
 		http_request.send();
 	 
 	

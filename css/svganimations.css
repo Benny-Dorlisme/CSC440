@@ -1,16 +1,36 @@
-@keyframes technicalskillsoutline{
+@keyframes T_technicalskillsoutline{
 	
 
 	50%{transform:translate(0px,-972px);}
 	100%{transform:translate(0px,-952px);}
 
 }
-@keyframes technicalskillsfill{
+@keyframes T_technicalskillsfill{
 	
 
 	50%{transform:translateY(-20px);}
 	100%{transform:initial;}
 
+}
+@keyframes E_technicalskillsoutline{
+	
+
+	50%{transform:translate(75px,-952px);}
+	100%{transform:translate(75px,-932px);}
+
+}
+@keyframes E_technicalskillsfill{
+	
+
+	50%{transform:translate(75px,-20px);}
+	100%{transform:translate(75px,-0px);}
+
+}
+#technicalskills{
+
+	height:70px;
+   width:600px;
+	margin-top:40px;
 }
 #B_outline{
 
@@ -86,78 +106,126 @@
 }
 #T_technicalskillsoutline{
 	transform:translate(0px,-952.36223px);
-	animation: technicalskillsoutline 4s infinite;
+	animation: T_technicalskillsoutline 5s ease infinite;
 }
 #T_technicalskillsfill{
 
-animation: technicalskillsfill 4s infinite;
+animation: T_technicalskillsfill 5s ease infinite;
 
 }
-.E_technicalskillsoutline{
+#E_technicalskillsoutline{
 	
 	
-	animation: technicalskillsoutline 4s infinite;
+	animation: E_technicalskillsoutline 4s  0.75s ease infinite;
 	transform: translate(75px ,-932.36px);
 }
 #E_technicalskillsfill{
 	
+	animation: E_technicalskillsfill 4s  0.75s ease infinite;
 	transform: translate(75px ,0px);
 }
 #C_technicalskillsoutline{
 	
+	animation: C_technicalskillsoutline 4s infinite;
 	transform: translate(150px , -932.36px);
-	animation: technicalskillsoutline 4s infinite;
+	
 }
 #C_technicalskillsfill{
-	
+	animation: C_technicalskillsfill 4s infinite;
 	transform: translate(150px , 0px);
 }
 #H_technicalskillsoutline{
-	
+	animation: H_technicalskillsoutline 4s infinite;
 	transform: translate(230px, -932.36px);
 }
 #H_technicalskillsfill{
-	
+	animation: H_technicalskillsfill 4s infinite;
 	transform: translate(230px , 0px);
 }
 #N_technicalskillsoutline{
 	
+	animation: N_technicalskillsoutline 4s infinite;
 	transform: translate(300px, -932.36px);
 }
 #N_technicalskillsfill{
 	
+	animation: N_technicalskillsfill 4s infinite;
 	transform: translate(300px , 0px);
 }
 
 #I_technicalskillsoutline{
 	
+	animation: I_technicalskillsoutline 4s infinite;
 	transform: translate(375px, -932.36px);
 }
 #I_technicalskillsfill{
 	
+	animation: I_technicalskillsfill 4s infinite;
 	transform: translate(375px , 0px);
 }
 #C2_technicalskillsoutline{
 	
+	animation: C2_technicalskillsoutline 4s infinite;
 	transform: translate(425px, -922.36px);
 }
 #C2_technicalskillsfill{
 	
+	animation: C2_technicalskillsfill 4s infinite;
 	transform: translate(425px , 10px);
 }
 #A_technicalskillsoutline{
 	
+	animation: A_technicalskillsoutline 4s infinite;
 	transform: translate(500px, -922.36px);
 }
 #A_technicalskillsfill{
 	
+	animation: A_technicalskillsfill 4s infinite;
 	transform: translate(500px , 10px);
 }
 #L_technicalskillsoutline{
 	
+	animation: L_technicalskillsoutline 4s infinite;
 	transform: translate(575px, -932.36px);
 }
 #L_technicalskillsfill{
 	
+	animation: L_technicalskillsfill 4s infinite;
 	transform: translate(575px , 0px);
+}
+#S_technicalskillsoutline{
+	transform: translate(690px, -952.36px);
+}
+#S_technicalskillsfill{
+	transform: translate(690px , 0px);
+}
+#K_technicalskillsoutline{
+	transform: translate(760px, -942.36px);
+}
+#K_technicalskillsfill{
+	transform: translate(760px , -10px);
+}
+#I2_technicalskillsoutline{
+	transform: translate(850px, -942.36px);
+}
+#I2_technicalskillsfill{
+	transform: translate(850px , -10px);
+}
+#L2_technicalskillsoutline{
+	transform: translate(900px, -942.36px);
+}
+#L2_technicalskillsfill{
+	transform: translate(900px , -10px);
+}
+#L3_technicalskillsoutline{
+	transform: translate(975px, -942.36px);
+}
+#L3_technicalskillsfill{
+	transform: translate(975px , -10px);
+}
+#S2_technicalskillsoutline{
+	transform: translate(1050px, -942.36px);
+}
+#S2_technicalskillsfill{
+	transform: translate(1050px , 9px);
 }

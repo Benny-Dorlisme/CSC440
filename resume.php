@@ -2,30 +2,98 @@
 include("includes/header.php");
 include("svg/contactinfo.svg.php");
 include("svg/technicalskills.svg.php");
+include("svg/logoAPlus.svg.php");
+include("svg/logoNetworkPlus.svg.php");
 echo("
 	<section id='page_content'>
-	<header>
+	<header id='page_content_header'>
+		<div id='page_content_header_container'>
 		<div>
-		<div>
+			
 			{$contactinfo_image}
-			<p>
+			
+			<p id='resume_contact_info'>
+			<a href='Benny_Dorlisme_resume.docx'>Download Resume</a>
+				<br/>	
 				251 Osborn St Brooklyn, NY 11212
 				<br/>
 				BennyDorlisme@gmail.com
-				<a href='Benny_Dorlisme_resume.docx'>Download Resume</a>
+				
+				<div  style='height:80px;'> <a href='https://certification.comptia.org/certifications/a' >{$a_plus_logo}</a> <a href='https://certification.comptia.org/certifications/network'> {$net_plus_logo}</a></div>
+				
 			</p>
-		<div>
+		</div>
 		
-	<div>
+	</div>
 	</header>
-	<div>
-		<div>
+	
+	<div id='page_content_body'>
+	<svg style='display:inline-block;width:100px; vertical-align:top; margin-top:15%;'>
+		
+		    <path  style='fill:none;stroke:#000000;' d='m0 50 L100 0 L100 100z'/>
+	    </svg>
+		<div id='technicalskills_section' style='width:70%; margin:0px 30px;display:inline-block;'>
 			{$technicalskills_image}
-		<div>
-	<div>
-	<footer>
-	</footer>
-
+		
+				<ul id='technical_skills_list'>
+					<li id='hardware' style='padding:0px 35%;'>
+						<a href='#'>Hardware</a>
+						<ul style='visibility:hidden; position:absolute;'>
+							<li>
+								PCs
+								<p>
+									Troubleshoot, and install external and internal peripherals(power, keyboard, mouse, video, PCI cards, HDD, etc...).
+									Install Windows
+								</p>
+							</li>
+							<li>
+								Macs
+								<p>
+									Troubleshoot and install external peripherals.  
+								</p>
+							</li>
+							<li>
+								Servers
+								<p>
+									Troubleshoot, install, and configure peripherals.
+								</p>
+							</li>
+							<li>
+								Network
+								<p>
+									Install and configure, Routers, Switchs, and modems.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li id='software' style='padding:0px 35%;'>
+						<a href='#'>Software</a>
+						<ul style='visibility:hidden; position:absolute;'>
+							<li>
+								Languages
+								<p>
+									HTML, CSS, Javascript, MYSQL, C/C++, BASH unix scripting, and Java
+								</p>
+							</li>
+							<li>
+								Programs
+							</li>
+							<li>
+								Network
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+			
+		</div>
+		<svg style='display:inline-block;width:100px; vertical-align:top; margin-top:15%;'>
+		
+		    <path style='fill:none;stroke:#000000;' d='m0 0 L100 50 L0 100z'/>
+	    </svg>
+	</div>
+	
+<!--
        <article id='resume' style='border:solid 2px;padding:0 100px 0 100px; margin:0 30px 0 30px;'>
 
 <p style=' width:300px;font-weight:bold; margin:0 auto;'>TECHNICAL and PROFESSIONAL SKILLS</p>
@@ -92,7 +160,9 @@ Major:	Information Technology	                                                  
             
             
             
-            <section id='feedback'>
+            
+           -->
+      <section id='feedback'>
             	<article>
             		<form action='' id='comment_form' >
         
@@ -122,7 +192,7 @@ Major:	Information Technology	                                                  
                 
                 
            </article>
-       </section>
+            </section>
      </section>
 ");
 ?>

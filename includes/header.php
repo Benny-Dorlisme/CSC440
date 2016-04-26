@@ -9,12 +9,13 @@ include("functions.php");
     	<meta charset="utf-8">
     	<meta name="description" content="Benny Dorlisme Portfolio Website">
         <meta name="keywords" content="Benny Dorlisme">
-    	<script src="../jquery/jquery-1.10.1.js"></script>
+    	<script src="jquery/jquery-1.10.1.js"></script>
         <script type="text/javascript" src="javascript/date.js"></script>
  		<script type="text/javascript" src="javascript/ajax.js"></script>
+ 		<script type="text/javascript" src="javascript/resume.js"></script>
         <link type="text/css" rel="stylesheet" href="css/index.css">
         <link type="text/css" rel="stylesheet" href="css/svganimations.css">
-        
+        <link type="text/css" rel="stylesheet" href="css/resume.css">
         
     </head>
   
