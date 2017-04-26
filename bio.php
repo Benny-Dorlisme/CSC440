@@ -1,62 +1,48 @@
 <?php
-     include("includes/header.php");
-?>
-        <div id="page_content">
-       		<section class="information">
-            	<article id="bio">
-        			<header style="margin-top:20px;">
-                		<h2 style="margin:0 0 0 20px;">Biography</h2>
-        			</header>
-                    <p style="padding-right:20px; padding-left:20px; "> <img src="img/benny.jpg" style="border-radius:5px; float:right; margin:0px;" title="Picture of Benny Dorlisme" alt="Picture of Benny Dorlisme"/>
-                    	My name is Benny Dorlisme. I'm a 22 year old computer technician working to become a computer scientist.
-                        I've been interested in computer technology ever since I was a child. At the age of 13 I got the opportunity                         to build my very first computer in an after school program and I've been fixing computers ever since. When I                         graduated from high school I started my career as a computer technologist and I've been 
-                        in the field ever since. I now own a computer repair business and design websites for fun.
-                    </p>
-                    
-                    <h4 style="padding:0px; margin:0 0 0 20px;">Education</h4>
-                     <p style="padding-right:20px; padding-left:20px;margin-top:0px;">
-                     	
-                    	I graduated from <a href="http://www.goodshepherds.org/programs/community/transfer-schools/schools/sbchs.html"                        >South Brooklyn Community High School</a> in 2009. Immediately after graduating I enrolled in <a href=                        "http://www.bmcc.cuny.edu/">Borough of Manhattan Community College</a> to study computer science. After a                         couple of semesters I was academically dismissed. Once I get enough money I'm going back to raise my GPA and                         finish my associates degree in computer science. In 2010 I attended a non-profit organization called <a href=                        "http://www.perscholas.org">Perscholas.</a>I attend the organization for 3 months 
-                        and I obtained an A+ and Network+ certification. I now attend a non-profit organization call 
-                        <a href="http://www.yearup.org">Year Up</a> where I am currently studying quality assurance for computer                         software.
-                    </p>
-                       <h4 style="padding:0px; margin:0 0 0 20px;">Work Experience</h4>
-                    <p style="padding-right:20px; padding-left:20px; margin-top:0px; ">
-                 
-                     	I started working in my last year of high school. I was one of Ikeas first employees at its store in Brooklyn.                        Working there for half a year I left and started to pursue my career as a computer technician. I got my first                        job as a computer technician in October of 2010. I was a Production Technician at <a href=                  "http://www.redemtech.com">Remdemtech.</a> I worked there for three months before I was layed off due to the company                         downsizing. I then went from job to job as an consultant for many different companies such as <a href="http://www.insourcenow.com">Insource Inc</a>,<a href="http://www.apexsystemsinc.com">Apex Systems Inc</a>, and <a href="http://www.wnet.org/" >WNET New York Public Media</a>, and many others. You can view and download my <a href="resume.html" target="_blank">resume here.</a> 
-                    </p>
-                </article>
-        	</section>
-            <section id="feedback">
-            	<article>
-            		<form action="" id="comment_form" >
-        
-            			<fieldset>
-            				<legend ><h1>Feedback</h1></legend>
-                			<p>
-                            	Like the Site? Leave a Comment.
-                            </p> 
-               				<label for="fname" >First Name:</label>
-           					<input type="text" id="fname" name="fname" placeholder=" Your first name"/>
-           
-           					<br>
-           
-           					<label for="lname" >Last Name:</label>
-           					<input type="text" id="lname" name="lname" placeholder="Your last name"/>
-           
-           					<br>
-           
-          		 			<label for="comment" > Comment:</label>
-           					<input type="text" id="comment" name="comment" placeholder="Your comment" >
-                            
-							<input type="button" id="submit_button" value="Comment" onClick="makeComment();"  >
-           
-           				</fieldset>
-                        
-           		</form>
-                
-                
-           </article>
-   <?php
-     include("includes/footer.php");
+require_once("class.page.php");
+
+	class BioPage extends Page{
+		
+		public function __construct(){
+			
+			$this->s = array("<script src='jquery/jquery-1.10.1.js'></script>" , "<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>");		
+		$this->l = array("<link type='text/css' rel='stylesheet' href='css/index.css'>","<link type='text/css' rel='stylesheet' href='css/bio.css'>");
+		$this->m = array("<meta charset='utf-8'>","<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='computer programmer'");
+	
+		$this->setPageBodyHeader();
+		$this->setPageBodyBody();
+		parent::__construct($this->s,$this->m,$this->l , ($this->page_body_header . $this->page_body_body));
+		}
+		public function setPageBodyHeader(){
+			
+			$this->page_body_header = "<section id='page_content'>
+		<header id='page_content_header'>
+		<div id='page_content_header_container'>
+		<div id='portfolio_picture_container'>
+		
+			<img id='portfolio_picture' src='img/benny.jpg' title='Picture of Benny Dorlisme' alt='Picture of Benny Dorlisme'/>
+				
+			
+		</div>
+		
+	</div>
+	</header>";
+			
+		
+		}
+		public function setPageBodyBody(){
+			$this->page_body_body = "<div id='page_content_body'>
+			<p id='bio' >
+			Benny Dorlisme was born in Queens NY, and raised in Brooklyn, NY. He’s very talented, inheriting the brains of his Haitian native father and heart of his African-American mother Benny has made many of his life goals come to fruition. Although he wasn’t raised by his biological parents; growing in the foster care system up in he’s lived with at least 7 different families in his life. Despite the constant changes in his life the influence computer technology had on him stayed the same. Since the age of five Benny has been a wiz at using computer technology utilizing video games and other electronic devices with precision. He built his first computer at the age of 13 demonstrating a real talent for the occupation. In 2010 Benny graduated from PerScholas Institute of Technology becoming a certified computer technician and has been working in the field ever since. Benny is very proud of the short but prominent career he has interpolated into. Although He would consider himself successful growing up predominantly in Red Hook a neighborhood in Brooklyn, NY he has personally felt the effects a low socioeconomic status can have on a person’s life. Losing family and friends to unnecessary circumstances resulting in incarceration and death is a part of the spur driving Benny to create change in his community.
+			</p>
+			</div>
+			";
+		}
+		public function setPageBodyFooter(){
+			
+		}
+	}
+	
+	$page = new BioPage();
+$page->printPage();
 ?>

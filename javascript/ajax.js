@@ -19,7 +19,12 @@ function makeComment()
 	var lname = document.getElementById("lname").value;
 	
 	var comment = document.getElementById("comment").value;
-	
+	var year = date.year;
+	var month = date.month
+	var day = date.day
+	var hour = date.getHours()
+	var minute = date.getMinutes()
+	var second = date.getSeconds()
 	if(!fname && !lname && !comment)
 	{
 		alert("You did not enter your first name, last name or comment.\n Please enter your first name, last name and comment.");
@@ -60,8 +65,8 @@ function makeComment()
 	
 	var p = document.createElement("p");
 	
-	var parent = document.getElementsByTagName("article");
-	
+	var parent = document.getElementById('comment_container');
+	console.log(parent)
 	http_request.open("GET","comment.php?fname=" + fname + "&lname=" + lname + "&comment=" + comment +"&year="+ year +"&date=" + day + "&month=" + month + "&second=" + second + "&hour=" + hour + "&minute=" + minute,true);
 		http_request.send();
 	 
@@ -71,7 +76,7 @@ function makeComment()
 	
 	if(http_request.readyState == 4 && http_request.status == 200)
 	{
-		parent.item(2).appendChild(p);
+		parent.appendChild(p);
 		
 
 	

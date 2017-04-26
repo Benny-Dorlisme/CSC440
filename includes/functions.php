@@ -303,22 +303,5 @@ function showDailyExpression()
 	
 	
 
-	function getBioHeader()
-{
-	global $connection;
 	
-	
-		$page = $connection->query("SELECT * FROM pages WHERE name = 'Bio'");
-							if($connection->errno >0)
-							{
-								echo($connection->error . "Error number " . $connection->errno);
-								exit();
-							}
-							
-							while($row = mysqli_fetch_array($page))
-							{
-								echo("<h2>" . $row["header"] . "</h2>" );
-							}
-							
-}
 ?>

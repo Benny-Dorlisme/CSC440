@@ -1,17 +1,174 @@
+#hardware #H_outline{
+	transform:translate(0px, -932.36px);
+}
+#hardware #H_fill{
+	transform:translate(0px, 0px);
+}
+#hardware #A_outline{
+transform:translate(90px, -932.36px);
+}
+#hardware #A_fill{
+transform:translate(90px, 0px);
+}
+#hardware #R_outline{
+	transform:translate(160px, -932.36px);
+}
+#hardware #R_fill{
+transform:translate(160px, 0px);
+}
+#hardware #D_outline{
+transform:translate(250px, 0px);
+}
+#hardware #D_fill{
+	transform:translate(250px, 0px);
+}
+#hardware #W_outline{
+transform:translate(0px, -952.36px);
+}
+#hardware #W_fill{
+transform:translate(330px, -952.36px);
+
+}
+#hardware #A_dupilcate_outline0{
+	transform:translate(400px, 0px);
+}
+#hardware #A_duplicate_fill0{
+	transform:translate(430px, 0px);
+}
+#hardware #R_duplicate_outline0{
+	transform:translate(500px, 0px);
+}
+#hardware #R_duplicate_fill0{
+transform:translate(500px, 0px);
+}
+#hardware #E_outline{
+	transform:translate(570px, 0px);
+}
+#hardware #E_fill{
+	transform:translate(570px, 0px);
+}
+
+/* //////////////////////////////////////////////////////*/
+#software #S_outline{
+	transform:translate(0px, -932.36px);
+}
+#software #S_fill{
+	transform:translate(0px, 0px);
+}
+#software #O_outline{
+transform:translate(90px, -932.36px);
+}
+#software #O_fill{
+transform:translate(90px, 0px);
+}
+#software #F_outline{
+	transform:translate(190px, -932.36px);
+}
+#software #F_fill{
+transform:translate(190px, -932.36px);
+}
+#software #T_outline{
+transform:translate(250px, 0px);
+}
+#software #T_fill{
+	transform:translate(250px, 0px);
+}
+#software #W_outline{
+
+}
+#software #W_fill{
+	transform:translate(330px, -952.36px);
+}
+#software #A_outline{
+	transform:translate(420px, 0px);
+}
+#software #A_fill{
+	transform:translate(420px, 0px);
+}
+#software #R_outline{
+	transform:translate(500px, 0px);
+}
+#software #R_fill{
+transform:translate(500px, 0px);
+}
+#software #E_outline{
+	transform:translate(570px, 0px);
+}
+#software #E_fill{
+	transform:translate(570px, 0px);
+}
+#page_content_header_container > div{
+		
+		width:30%;
+		margin:0px auto;
+	}
+	#left_arrow{
+		 filter: drop-shadow( -5px 0px 1px #000 );
+		 margin-left:3%;
+	}
+	#right_arrow{
+		 filter: drop-shadow( 5px 0px 1px #000 );
+		 margin-left:1%;
+	}
 #resume_contact_info{
 	
 	margin:0px;
 }
-#hardware{
+#resume_contact_info > span{
+		margin-left:5%;
+	}
+	#resume_contact_info > span:nth-child(4n+1){
+		margin-left:15%;
+	}
+	#resume_contact_info > a{
+		margin-left:22%;
+		color:#E2231A;
+		font-weight:bolder;
+	}
+	#resume_contact_info > div{
+		padding-left:9%;
+	}
+#technicalskills{
+	margin-left:10%;
+}
+#technical_skills_section{
+	margin-left:3%;
+}
+#hardware_technical_skills_list{
 	margin-bottom:10px;
+	padding:0px;
 }
-#hardware a{
-	border: solid black 2px; 
+#hardware_technical_skills_list a{
+    margin:0px auto;
 	padding:0px 2px;
+	width:17%;
+	display:	block;
 	
 }
-#software a{
-	border: solid black 2px; 
-	padding: 0px 4px;
+#hardware_menu{
+	width:100%;
 	
+}
+#software_technical_skills_list a{
+	margin:0px auto;
+	padding:0px 2px;
+	width:17%;
+	display:	block;
+	
+}
+
+.resume_section{
+	width:70%; 
+	margin:0px 0px 0px 4%;
+	
+}
+
+[data-active_section='on']{
+	visibility:visible;
+	display:inline-block;
+	position:static;
+}
+[data-active_section='off']{
+	visibility:hidden;
+	position:absolute;
 }

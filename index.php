@@ -6,23 +6,19 @@ if($_SERVER["REQUEST_METHOD"] != "GET" ){
 
 	 switch($_GET["page"]){
          
-    case "Bio": include("bio.php");
+    case "bio"        : header("Location:bio.php");exit;
     break;
-    case "IT" : include("IT.php");
+    case "IT"         : header("Location:IT.php");exit;
     break;
-    case "QA" : include("QA.php");
+    case "contact"    : header("Location:contact.php");exit;
     break;
-    case "programming" : include("programming.php");
+    case "consulting" : header("Location:consulting.php");exit;
     break;
-    case "contact": include("contact.php");
+    case "hobbies"    : header("Location:hobbies.php");exit;
     break;
-    case "consulting" : include("consulting.php");
+    case "othersites" : header("Location:othersites.php");exit;
     break;
-    case "hobbies" : include("hobbies.php");
-    break;
-    case "othersites" : include("othersites.php");
-    break;
-    default : include("resume.php");
+    default           : header("Location:resume.php");exit;
     break;
   }
 ?>

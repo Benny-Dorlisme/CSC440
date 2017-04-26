@@ -1,231 +1,341 @@
-@keyframes T_technicalskillsoutline{
+@keyframes technicalskills_T_outline{
 	
-
-	50%{transform:translate(0px,-972px);}
-	100%{transform:translate(0px,-952px);}
+	0%{transform:initial;}
+	25%{transform:translateY(-20px);}
+	75%{transform:translateY(20px);}
+	100%{transform:translateY(0px);}
 
 }
-@keyframes T_technicalskillsfill{
-	
 
-	50%{transform:translateY(-20px);}
-	100%{transform:initial;}
+@keyframes technicalskills_T_fill{
+	
+	
+	0%{transform:initial;}
+	25%{transform:translateY(-20px);}
+	75%{transform:translateY(20px);}
+	100%{transform:translateY(0px);}
 
 }
-@keyframes E_technicalskillsoutline{
+
+@keyframes technicalskills_E_outline{
 	
 
 	50%{transform:translate(75px,-952px);}
 	100%{transform:translate(75px,-932px);}
 
 }
-@keyframes E_technicalskillsfill{
+@keyframes technicalskills_E_fill{
 	
 
 	50%{transform:translate(75px,-20px);}
 	100%{transform:translate(75px,-0px);}
 
 }
+@keyframes technicalskills_C_outline{
+	
+	
+	25%{transform:translate(150px,-902.36px);}
+	75%{transform:translate(150px,-956.36px);}
+	100%{transform:translate(150px,-932.36px);}
+}
+@keyframes technicalskills_C_fill{
+	
+	
+	25%{transform:translate(150px,30px);}
+	75%{transform:translate(150px,-26px);}
+	100%{transform:translate(150px,0px);}
+}
+@keyframes technicalskills_H_outline{
+	
+	25%{transform:translate(230px,-952px);}
+	75%{transform:translate(230px,-884px);}
+	100%{transform:translate(230px,-932.36px);}
+	
+}
+@keyframes technicalskills_H_fill{
+	25%{transform:translate(230px,-20px);}
+	75%{transform:translate(230px,50px);}
+	100%{transform:translate(230px,0px);}
+
+}
+@keyframes technicalskills_N_outline{
+	
+	25%{transform:translate(300px,-902px);}
+	75%{transform:translate(300px,-940px);}
+	100%{transform:translate(300px,-932.36px);}
+	
+}
+@keyframes technicalskills_N_fill{
+	
+	25%{transform:translate(300px,30px);}
+	75%{transform:translate(300px,-40px);}
+	100%{transform:translate(300px,0px);}
+	
+}
+@keyframes technicalskills_I_outline{
+	
+		20%{transform:translate(375px,-922px);}
+	75%{transform:translate(375px,-955px);}
+	100%{transform:translate(375px,-932.36px);}
+
+}
+@keyframes technicalskills_I_fill{
+	
+		20%{transform:translate(375px,10px);}
+	75%{transform:translate(375px,-25px);}
+	100%{transform:translate(375px,0px);}
+
+}
+@keyframes technicalskills_C_duplicate_outline0{
+	
+	25%{transform:translate(425px,-902.36px);}
+	75%{transform:translate(425px,-956.36px);}
+	100%{transform:translate(425px,-922.36px);}
+
+}
+@keyframes technicalskills_C_duplicate_fill0{
+	
+	25%{transform:translate(425px,30px);}
+	75%{transform:translate(425px,-22px);}
+	100%{transform:translate(425px,10px);}
+
+}
+@keyframes technicalskills_A_outline{
+	
+	15%{transform:translate(500px,-952.36px);}
+	85%{transform:translate(500px,-900.36pxpx);}
+	100%{transform:translate(500px,-922.36px);}
+
+}
+@keyframes technicalskills_A_fill{
+	
+	15%{transform:translate(500px,-60.36px);}
+	85%{transform:translate(500px,0.36px);}
+	100%{transform:translate(500px,10px);}
+
+}
+@keyframes technicalskills_L_outline{
+	
+		25%{transform:translate(575px,-952px);}
+	75%{transform:translate(575px,-884px);}
+	100%{transform:translate(575px,-932.36px);}
+
+}
+@keyframes technicalskills_L_fill{
+	
+	25%{transform:translate(575px,-912px);}
+	75%{transform:translate(575px,-884px);}
+	100%{transform:translate(575px,0px);}
+transform: translate(575px , 0px);
+}
+
 #technicalskills{
 
-	height:70px;
+	height:110px;
    width:600px;
-	margin-top:40px;
+
 }
-#B_outline{
+#bennydorlisme #B_outline{
 
 	transform:translateY(-932.36px);
 }
-#E1_outline{
+
+#bennydorlisme #E_outline{
 	transform:translate(50px ,-932.36px);
 	
 }
-#N1_outline{
+#bennydorlisme #E_fill{
+	transform:translate(975px,0px);
+}
+#bennydorlisme #N_outline{
 	transform:translate(125px ,-932.36px);
 	
 }
-#N2_outline{
+#bennydorlisme #N_duplicate_outline0{
 	transform:translate(210px ,-932.36px);
 	
 }
-#N2_fill{
+#bennydorlisme #N_duplicate_fill0{
 	transform:translate(210px ,0px);
 	
 }
-#Y_outline{
+#bennydorlisme #Y_outline{
 	transform:translate(290px,-952.36223px);
 }
-#D_outline{	
+#bennydorlisme #D_outline{	
 	transform:translate(450px,-932.36px);
 }
-#D_fill{
+#bennydorlisme #D_fill{
 	transform:translate(450px,0px);
 }
-#O_outline{	
+#bennydorlisme #O_outline{	
 	transform:translate(530px,-932.36px);
 }
-#O_fill{
+#bennydorlisme #O_fill{
 	transform:translate(530px,0px);
 }
-#R_outline{	
+#bennydorlisme #R_outline{	
 	transform:translate(620px,-952.36px);
 }
-#R_fill{
+#bennydorlisme #R_fill{
 	transform:translate(620px,0px);
 }
-#L_outline{	
+#bennydorlisme #L_outline{	
 	transform:translate(690px,-932.36px);
 }
-#L_fill{
+#bennydorlisme #L_fill{
 	transform:translate(690px,0px);
 }
-#I_outline{	
+#bennydorlisme #I_outline{	
 	transform:translate(755px,-942.36px);
 }
-#I_fill{
+#bennydorlisme #I_fill{
 	transform:translate(755px,-10px);
 }
-#S_outline{	
+#bennydorlisme #S_outline{	
 	transform:translate(800px,-942.36px);
 }
-#S_fill{
+#bennydorlisme #S_fill{
 	transform:translate(800px,10px);
 }
-#M_outline{	
+#bennydorlisme #M_outline{	
 	transform:translate(890px,-932.36px);
 }
-#M_fill{
+#bennydorlisme #M_fill{
 	transform:translate(890px,0px);
 }
-#E2_outline{
+#bennydorlisme #E_duplicate_outline0{
 	transform:translate(975px,-932.36px);
 	
 }
-#E2_fill{
-	transform:translate(975px,0px);
-}
-#T_technicalskillsoutline{
-	transform:translate(0px,-952.36223px);
-	animation: T_technicalskillsoutline 5s ease infinite;
-}
-#T_technicalskillsfill{
+/* Technical Skills///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#technicalskills #T_outline{
 
-animation: T_technicalskillsfill 5s ease infinite;
+	animation: technicalskills_T_outline 10s ease infinite;
 
 }
-#E_technicalskillsoutline{
+
+#technicalskills #T_fill{
+
+animation: technicalskills_T_fill 10s ease infinite;
+transform:translate(0px,-952.36223px);
+}
+#technicalskills #E_outline{
 	
 	
-	animation: E_technicalskillsoutline 4s  0.75s ease infinite;
+	animation: technicalskills_E_outline 4s ease infinite;
 	transform: translate(75px ,-932.36px);
-}
-#E_technicalskillsfill{
 	
-	animation: E_technicalskillsfill 4s  0.75s ease infinite;
+}
+#technicalskills #E_fill{
+	
+	animation: technicalskills_E_fill 4s  0.75s ease infinite;
 	transform: translate(75px ,0px);
 }
-#C_technicalskillsoutline{
+#technicalskills #C_outline{
 	
-	animation: C_technicalskillsoutline 4s infinite;
+	animation: technicalskills_C_outline 15s ease infinite;
 	transform: translate(150px , -932.36px);
 	
 }
-#C_technicalskillsfill{
-	animation: C_technicalskillsfill 4s infinite;
+#technicalskills #C_fill{
+	animation: technicalskills_C_fill 15s ease infinite;
 	transform: translate(150px , 0px);
 }
-#H_technicalskillsoutline{
-	animation: H_technicalskillsoutline 4s infinite;
+#technicalskills #H_outline{
+	animation: technicalskills_H_outline 15s ease infinite;
 	transform: translate(230px, -932.36px);
 }
-#H_technicalskillsfill{
-	animation: H_technicalskillsfill 4s infinite;
+#technicalskills #H_fill{
+	animation: technicalskills_H_fill 15s ease infinite;
 	transform: translate(230px , 0px);
 }
-#N_technicalskillsoutline{
+#technicalskills #N_outline{
 	
-	animation: N_technicalskillsoutline 4s infinite;
+	animation: technicalskills_N_outline 8s ease infinite;
 	transform: translate(300px, -932.36px);
 }
-#N_technicalskillsfill{
+#technicalskills #N_fill{
 	
-	animation: N_technicalskillsfill 4s infinite;
+	animation: technicalskills_N_fill 8s ease infinite;
 	transform: translate(300px , 0px);
 }
 
-#I_technicalskillsoutline{
+#technicalskills #I_outline{
 	
-	animation: I_technicalskillsoutline 4s infinite;
+	animation: technicalskills_I_outline 14s ease infinite;
 	transform: translate(375px, -932.36px);
 }
-#I_technicalskillsfill{
+#technicalskills #I_fill{
 	
-	animation: I_technicalskillsfill 4s infinite;
+	animation: technicalskills_I_fill 14s ease infinite;
 	transform: translate(375px , 0px);
 }
-#C2_technicalskillsoutline{
+#technicalskills #C_duplicate_outline0{
 	
-	animation: C2_technicalskillsoutline 4s infinite;
+	animation: technicalskills_C_duplicate_outline0 ease 10s infinite;
 	transform: translate(425px, -922.36px);
 }
-#C2_technicalskillsfill{
+#technicalskills #C_duplicate_fill0{
 	
-	animation: C2_technicalskillsfill 4s infinite;
+	animation: technicalskillsC_duplicate_fill0 10s ease infinite;
 	transform: translate(425px , 10px);
 }
-#A_technicalskillsoutline{
+#technicalskills #A_outline{
 	
-	animation: A_technicalskillsoutline 4s infinite;
+	animation: technicalskills_A_outline 15s ease infinite;
 	transform: translate(500px, -922.36px);
 }
-#A_technicalskillsfill{
+#technicalskills  #A_fill{
 	
-	animation: A_technicalskillsfill 4s infinite;
+	animation: technicalskills_A_fill 15s ease infinite;
 	transform: translate(500px , 10px);
 }
-#L_technicalskillsoutline{
+#technicalskills #L_outline{
 	
-	animation: L_technicalskillsoutline 4s infinite;
+	animation: technicalskills_L_outline 4s ease infinite;
 	transform: translate(575px, -932.36px);
 }
-#L_technicalskillsfill{
+#technicalskills #L_fill{
 	
-	animation: L_technicalskillsfill 4s infinite;
+	animation: technicalskills_L_fill 4s ease infinite;
 	transform: translate(575px , 0px);
 }
-#S_technicalskillsoutline{
+#technicalskills #S_outline{
 	transform: translate(690px, -952.36px);
 }
-#S_technicalskillsfill{
+#technicalskills #S_fill{
 	transform: translate(690px , 0px);
 }
-#K_technicalskillsoutline{
+#technicalskills #K_outline{
 	transform: translate(760px, -942.36px);
 }
-#K_technicalskillsfill{
+#technicalskills #K_fill{
 	transform: translate(760px , -10px);
 }
-#I2_technicalskillsoutline{
+#technicalskills #I_duplicate_outline0{
 	transform: translate(850px, -942.36px);
 }
-#I2_technicalskillsfill{
+#technicalskills #I_duplicate_fill0{
 	transform: translate(850px , -10px);
 }
-#L2_technicalskillsoutline{
+#technicalskills #L_duplicate_outline0{
 	transform: translate(900px, -942.36px);
 }
-#L2_technicalskillsfill{
+#technicalskills #L_duplicate_fill0{
 	transform: translate(900px , -10px);
 }
-#L3_technicalskillsoutline{
+#technicalskills #L_duplicate_outline1{
 	transform: translate(975px, -942.36px);
 }
-#L3_technicalskillsfill{
+#technicalskills #L_duplicate_fill1{
 	transform: translate(975px , -10px);
 }
-#S2_technicalskillsoutline{
+#technicalskills #S_duplicate_outline0{
 	transform: translate(1050px, -942.36px);
 }
-#S2_technicalskillsfill{
+#technicalskills #S_duplicate_fill0{
 	transform: translate(1050px , 9px);
 }
+
+

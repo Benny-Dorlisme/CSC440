@@ -1,16 +1,9 @@
 <?php
-include("includes/constants.php");
 
-$connection = mysql_connect(DB_SERVER,DB_USER,DB_PASS);
-if(!$connection)
-{
-	die("Failed to connect MYSQL") . mysql_error();
-}
-$commentsdb = mysql_select_db(DB_COMMENTS, $connection);
-if(!$commentsdb)
-{
-	die("Failed to connect database") . mysql_error();
-}
+
+$d = new PDO("mysql:host=db679312378.db.1and1.com;dbname=db679312378","dbo679312378","Real_numbers101!");
+
+
 
 
 
@@ -27,11 +20,12 @@ $second = $_GET['second'];
 
 $date =  $year . "-" . "0". ($month + 1) . "-"  .$day . date(" H:i:s" , mktime($hour, $minute, $second));
 
-
-$insert = "INSERT INTO comment(FirstName,LastName,Comment,Time) VALUES('$first_name','$last_name','$comment','$date')";
-
-mysql_query($insert);
-
+$params = array("firstname" => $first_name,"lastname"=>$last_name,"comment"=>$comment,"time"=>$date);
+$insert = "INSERT INTO comments(firstname,lastname,comment,time) VALUES(?,?,?,?)";
+$s = $d->prepare($insert);
+$s->execute(array_values($params));
+$d= null;
+$s = null;
 
 	echo "<h4 style='margin-left:30px; padding: 0px; display:inline;'>" ;
 	
