@@ -26,7 +26,7 @@ require_once("class.page.php");
                             (929)-377-3969 
                         </p>
 		<p style='padding-right:20px; padding-left:20px;margin-bottom:10px;'>
-                    	Please feel free to leave me your contact information so I can get in touch with you. Thank You!
+                    	Please feel free to contact me at anytime. Thank You!
                     </p>
 				
 			
@@ -40,25 +40,7 @@ require_once("class.page.php");
 		public function setPageBodyBody(){
 			$this->page_body_body = "<div id='page_content_body'>
 
-                    <form id='contact_form' action='contact.php' method='post'>
-                    	<fieldset>
-                    		<legend>Your Contact Information</legend>
-                    		<label for='first_name'>
-                            	First Name:
-                            </label>
-                    		<input type='text' name='first_name' id='first_name'/>
-                    		<br/>
-                     		<label for='last_name'>Last Name:</label>
-                    		<input type='text' name='last_name' id='last_name'/>
-                            <br/>
-                            <label for='email' style='margin-right:33px;'>Email:</label>
-                            
-                    		<input type='email' name='email' id='email'/>
-                            
-                     
-                            <input type='submit' value ='Send'/>
-                    	</fieldset>
-                    </form>
+                  
                
 			</div>
 			";

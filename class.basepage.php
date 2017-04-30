@@ -20,9 +20,9 @@ ini_set('display_errors',1);
 	protected $page_body_header = "";
 	protected $page_body_body   = "";
 	
-	private $s                = null;
-	private $l                = null;
-	private $m                = null;
+	protected $s                = null;
+	protected $l                = null;
+	protected $m                = null;
 		public function __construct($scripts , $links , $meta_data , $body_content){
 			$this->scripts = array($scripts);
 			$this->links = array($links);
@@ -69,6 +69,7 @@ ini_set('display_errors',1);
             <br/>
             <footer id='page_header_footer'>
         <nav id='header_nav'>
+            <li><a href='index.php?page=' rel='Benny Dorlisme home page'>Home </a></li>
         	<li><a href='index.php?page=bio' rel='Benny Dorlisme biography page'>About Me </a></li>
         	<li><a href='index.php?page=contact' rel='Get in contact with Benny Dorlisme'>Contact</a></li>
             <li><a href='index.php?page=consulting' rel='Let Benny Dorlisme be your computer consultant'>Consulting</a></li>
@@ -101,7 +102,7 @@ ini_set('display_errors',1);
             			<fieldset>
             				<legend ><h1>Feedback</h1></legend>
                 			<p>
-                            	Want to tell Benny something? Try leaving a comment.
+                            	Leave a comment.
                             </p> 
                				<label for='fname' >First Name:</label>
            					<input type='text' id='fname' name='fname' placeholder=' Your first name'/>

@@ -1,55 +1,30 @@
-<!Doctype HTML>
-<html lang="en">
-	<head>
-    <meta name="keywords" content="Benny, Dorlisme">
-    <meta name="description" content="Benny Dorlisme WebSite">
-    <meta name="author" content="Benny Dorlisme">
-    <meta charset="UTF-8">
-    
-    
-    
-    	<script src="jquery/jquery-1.10.1.js">
-	    </script>
-        <script type="text/javascript" src="javascript/date.js"></script>
-        
-        
-        <link type="text/css" rel="stylesheet" href="css/index.css">
-    </head>
-  
-    <body>
-    
-    <section id="page_header">
-    	<header style="margin:0 0 0 0px; padding:0 0 0 0px;" name="header">
-         
-        	<h1 style="margin: 0 0 0 0px; padding:0px; letter-spacing:10px; margin-left:10%; font-family:Century; color:silver;">Benny Dorlisme</h1>
-            <br/>
-        	<nav id="header_nav">
-            	<li><a href="index.php">Bio</a></li>
-                <li><a href="IT.html">Information Technology</a></li>
-                <li><a href="QA.html">Quality Assurance</a></li>
-                <li><a href="programming.html">Programming</a></li>
-                <p style = "float:right; display:inline; margin:0 130px 0 0px; padding:0px;" id="time_section">
-                Today's date is:
-            </p>
-            </nav>
-           
-        </header>
-       </section>
-       <div id="page_content">
-       			<section class="information">
-            <header style="margin-top:20px;">
-            	<h2 style="margin:0 0 0 20px;">Consulting</h2>
-        	</header>
-            
-            <p style="padding-right:20px; padding-left:20px; ">
-            	Here you can request computer break-fix, and web development consulting .
-            </p>    
+
+<?php
+
+include("class.page.php");
+
+class ConsultingPage extends Page{
+
+    public function __construct(){
+
+        $this->s = array("<script src='jquery/jquery-1.10.1.js'></script>" , "<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>","<script type='text/javascript' src='javascript/base.js'></script>");
+        $this->l = array("<link type='text/css' rel='stylesheet' href='css/index.css'>","<link type='text/css' rel='stylesheet' href='css/consulting.css'>");
+        $this->m = array("<meta charset='utf-8'>","<meta content='https://www.bennydorlisme.com/' property='og:site_name'>"."<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='Benny Dorlisme Consutling'>","<meta name='keywords' content='Benny Dorlisme Tech'>");
+        $this->setPageBodyHeader();
+        $this->setPageBodyBody();
+        parent::__construct($this->s,$this->m,$this->l , ($this->page_body_header . $this->page_body_body));
+
+    }
+    public function setPageBodyBody(){
+        $this->page_body_body = "  
+  <div id='page_content_body'>
+ 
                 
-                	<div style="width:378; display:inline-block; margin-left:20px">
+                	<div  id='container_for_all_forms'>
                     	
-                       
-                        	<form action="#" method="post" style="height:500px;">
-                            <fieldset style="width:300px; height:400px; display:inline-block;">
+                       <div id='container_for_comp_break_fix_form' class='form_container'> 
+                        	<form action='request.php' method='post' id='comp_break_fix_form' class='customer_form'>
+                            <fieldset>
                             <legend>
                             <header>
                         	<h4>
@@ -57,68 +32,133 @@
                             </h4>
                         	</header>
                             </legend>
-                        		<label for="name_for_consulting">
-                        			Name:
+                        		<label for='first_name'>
+                        			First Name:
                         		</label>
-                        		<input type="text" id="name_for_consulting" placeholder="Enter your name">
+                        		<input type='text' id='first_name' placeholder='Enter your first name'name='first_name_for_comp_break_fix'>
                            
                         		<br/>
-                          		<label for="email_for_consulting">
+                        			<label for='last_name_for_comp_break_fix'>
+                        			Last Name:
+                        		</label>
+                        		<input type='text' id='last_name_for_comp_break_fix' placeholder='Enter your last name'name='last_name_for_for_comp_break_fix'>
+                        		<br/>
+                          		<label for='email_for_comp_break_fix'>
                         			Email:
                         		</label>
-                        		<input type="email" id="email_for_consulting"placeholder="ex. someone@somewhere.com">
+                        		<input type='email' id='email_for_comp_break_fix'placeholder='ex. someone@somewhere.com' name='email_for_comp_break_fix'>
                        
                         		<br/>
                         		<br/>
-                         		<label for="issue_for_consulting">
-                        			Problem:
+                         		<label for='request_comment'>
+                        			Request:
                         		</label>
-                              
-                                <input type="text" id="problem_for consulting" name="issue_for consulting" placeholder="" />
+                                <textarea>
+                                
+                                </textarea>
+                                <input type='hidden' id='request_comment' name='request_comment' placeholder='' />
+                                <input type='submit' id='comp_break_fix_buttont' name='request_comment' placeholder='' />
                      
                        	</fieldset>
-                        
-
-                            <fieldset style="width:300px;height:inherit; display:inline-block;" >
+    
+                       		</form >
+                       		</div>
+                       		<div id='container_for_dev_form' class='form_container'>
+                        <form action='request.php' method='post' id='dev_form'  class='customer_form'>
+                         <fieldset >
                             <legend>
                             <header>
                         	<h4>
-                            	Web Development
+                            	Web App / Standalone App Dev 
                             </h4>
                         	</header>
                             </legend>
-                        		<label for="name_for_consulting">
-                        			Name:
+                        		<label for='first_name_for_dev'>
+                        			First Name:
                         		</label>
-                        		<input type="text" id="name_for_consulting" placeholder="Enter your name">
+                        		<input type='text' id='first_name_for_dev' placeholder='Enter your first name'name='first_name_for_dev'>
                            
                         		<br/>
-                          		<label for="email_for_consulting">
+                        		<label for='last_name_for_dev'>
+                        			Last Name:
+                        		</label>
+                        		<input type='text' id='last_name_for_dev' placeholder='Enter your last name'name='last_name_for_dev'>
+                           
+                        		<br/>
+                          		<label for='email_for_dev'>
                         			Email:
                         		</label>
-                        		<input type="email" id="email_for_consulting"placeholder="ex. someone@somewhere.com">
+                        		<input type='email' id='email_for_dev'placeholder='ex. someone@somewhere.com'name='email_for_dev'>
+                       
+                        		<br/>
+                        	
+                         		<label for='issue_for_consulting'>
+                        			Request:
+                        		</label>
+                                <textarea> 
+                                
+                                </textarea>
+                        	 <input type='hidden' id='inqury_for_consulting' name='request_comment_for_dev' placeholder='' />
+                                </fieldset>
+                            </form>
+                            <div id='container_for_graphics_form' class='form_container'>
+                        <form action='request.php' method='post'  id='graphics_form' class='customer_form'>
+                         <fieldset >
+                            <legend>
+                            <header>
+                        	<h4>
+                            	Graphic Request
+                            </h4>
+                        	</header>
+                            </legend>
+                        		<label for='first_name_for_graphics'>
+                        			First Name:
+                        		</label>
+                        		<input type='text' id='first_name_for_graphics' placeholder='Enter your first name' name='first_name_for_graphics'>
+                           
+                        		<br/>
+                        		<label for='last_name_for_graphics'>
+                        			Last Name:
+                        		</label>
+                        		<input type='text' id='last_name_for_graphics' placeholder='Enter your last name' name='last_name_for_graphics'>
+                           
+                        		<br/>
+                          		<label for='email_for_graphics>
+                        			Email:
+                        		</label>
+                        		<input type='email' id='email_for_dev'placeholder='ex. someone@somewhere.com'name='email_for_graphics'>
                        
                         		<br/>
                         		<br/>
-                         		<label for="issue_for_consulting">
+                         		<label for='request_for_graphics'>
                         			Request:
                         		</label>
-                            
-                        	 <input type="text" id="inqury_for_consulting" name="request_for consulting" placeholder="" />
+                                <textarea> 
+                                
+                                </textarea>
+                        	 <input type='hidden' id='request_for_graphics' name='request_comment_for_graphics' placeholder='' />
                                 </fieldset>
-                       		</form>
-                        
-                        
-                        </div>
-                  
-                
-                
-          
+                            </form>
+                        </div>";
+    }
+    public function setPageBodyHeader(){
+        $this->page_body_header = " <section id='page_content'>
+            <header id='page_content_header'>
+            	<h2>Consulting</h2>
+            	 <p >
+            	Here you can make a request for consultation. You will recieve a quote via email once request has been made.<br/>You can request a free diagnostic for a technical problem. 
+            </p>  
+        	</header>
             
-          
-       </div>
-	
-<?php
-     include("includes/footer.php");
+            ";
+    }
+    public function setPageBodyFooter(){
+
+    }
+}
+$p = new ConsultingPage();
+$p->printPage();
 ?>
+
+
 

@@ -23,6 +23,10 @@
 	li{
 		list-style: none;
 	}
+	textarea{
+	resize: none;
+	}
+}
 	p ,ul, li{
 	margin:0px; 
 	padding:0px;
@@ -51,7 +55,7 @@
 	}
 	#page_header footer
 	{
-		margin-left:35%;
+		margin-left:28.5%;
 	   
 	}
 	#page_header

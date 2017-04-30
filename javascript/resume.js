@@ -59,3 +59,29 @@ Resume= {
 		
 }
 
+$(document).ready(function(){
+
+	$(document).keydown(event,function(){
+		if(event.code == "ArrowRight"){
+            switch(Resume.current_section){
+
+                case Resume.sections[0] : $(Resume.current_section).attr("data-active_section","off");Resume.current_section = Resume.sections[2];$(Resume.current_section).attr("data-active_section","on");
+                    break
+                case Resume.sections[1] : $(Resume.current_section).attr("data-active_section","off");Resume.current_section = Resume.sections[0];$(Resume.current_section).attr("data-active_section","on");
+                    break
+                case Resume.sections[2] : $(Resume.current_section).attr("data-active_section","off");Resume.current_section = Resume.sections[1];$(Resume.current_section).attr("data-active_section","on");
+                    break
+            }
+		}else if(event.code == "ArrowLeft"){
+            switch(Resume.current_section){
+
+                case Resume.sections[0] : $(Resume.current_section).attr("data-active_section","off");Resume.current_section = Resume.sections[1];$(Resume.current_section).attr("data-active_section","on");
+                    break
+                case Resume.sections[1] : $(Resume.current_section).attr("data-active_section","off");Resume.current_section = Resume.sections[2];$(Resume.current_section).attr("data-active_section","on");
+                    break
+                case Resume.sections[2] : $(Resume.current_section).attr("data-active_section","off");Resume.current_section = Resume.sections[0];$(Resume.current_section).attr("data-active_section","on");
+                    break
+            }
+		}
+	})
+})
