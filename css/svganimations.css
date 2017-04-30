@@ -1,3 +1,4 @@
+/*
 @keyframes technicalskills_T_outline{
 	
 	0%{transform:initial;}
@@ -126,10 +127,10 @@
 	25%{transform:translate(575px,-912px);}
 	75%{transform:translate(575px,-884px);}
 	100%{transform:translate(575px,0px);}
-transform: translate(575px , 0px);
-}
 
-#technicalskills{
+}
+*/
+#teczhnicalskills{
 
 	height:110px;
    width:600px;
@@ -210,7 +211,7 @@ transform: translate(575px , 0px);
 }
 /* Technical Skills///////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #technicalskills #T_outline{
-
+	transform:translate(0px,-952.36223px);
 	animation: technicalskills_T_outline 10s ease infinite;
 
 }
@@ -218,7 +219,7 @@ transform: translate(575px , 0px);
 #technicalskills #T_fill{
 
 animation: technicalskills_T_fill 10s ease infinite;
-transform:translate(0px,-952.36223px);
+transform:translate(0px,0px);
 }
 #technicalskills #E_outline{
 	
@@ -337,5 +338,886 @@ transform:translate(0px,-952.36223px);
 #technicalskills #S_duplicate_fill0{
 	transform: translate(1050px , 9px);
 }
+/*/////////////////////////////////////////////////*/
+#education #E_outline{
+	transform: translate(0px , -900px);
+}
+#education #E_fill{
+	transform: translate(0px , 32px);
+}
+#education #D_outline{
+	transform: translate(85px , -900px);
+}
+#education #D_fill{
+	transform: translate(85px , 32px);
+}
+#education #U_fill{
+	transform: translate(170px , 32px);
+	fill: white;
+}
+#education #C_outline{
+	transform: translate(250px , -900px);
+}
+#education #C_fill{
+	transform: translate(250px , 32px);
+}
+#education #A_outline{
+	transform: translate(330px , -900px);
+}
+#education #A_fill{
+	transform: translate(330px , 32px);
+}
+#education #T_outline{
+	transform: translate(390px , -920px);
+}
+#education #T_fill{
+	transform: translate(390px , 32px);
+}
+#education #I_outline{
+	transform: translate(460px , -900px);
+}
+#education #I_fill{
+	transform: translate(460px , 32px);
+}
+#education #O_outline{
+	transform: translate(520px , -900px);
+}
+#education #O_fill{
+	transform: translate(520px , 32px);
+}
+#education #N_outline{
+	transform: translate(600px , -900px);
+}
+#education #N_fill{
+	transform: translate(600px , 32px);
+}
+#college #C_outline{
+	 transform: translate(0px , -922.36px);
+ }
+#college #C_fill{
+	transform: translate(0px , 0px);
+}
+#college #O_outline{
+	 transform: translate(100px , -922.36px);
+ }
+#college #O_fill{
+	transform: translate(100px , 0px);
+}
+#college #L_outline{
+	transform: translate(160px , -922.36px);
+}
+#college #L_fill{
+	transform: translate(160px , 0px);
+}
+#college #L_duplicate_outline0{
+	transform: translate(210px , -922.36px);
+}
+#college #L_duplicate_fill0{
+	transform: translate(210px , 0px);
+}
+#college #E_outline{
+	 transform: translate(290px , -922.36px);
+ }
+#college #E_fill{
+	transform: translate(290px , 0px);
+}
+#college #G_outline{
+	transform: translate(340px ,0 );
+}
+#college #G_fill{
+	transform: translate(360px , -922.36px);
+}
+#college #E_duplicate_outline0{
+	transform: translate(410px , -922.36px);
+}
+#college #E_duplicate_fill0{
+	transform: translate(410px , 0px);
+}
+/*/////////////////////////////////////////
 
+ */
+#secondary #S_outline{
+	 transform: translate(0px , -922.36px);
+ }
+#secondary #S_fill{
+	transform: translate(0px , 0px);
+}
+#secondary #E_outline{
+	transform: translate(100px , -922.36px);
+}
+#secondary #E_fill{
+	transform: translate(100px , 0px);
+}
+#secondary #C_outline{
+	transform: translate(175px , -922.36px);
+}
+#secondary #C_fill{
+	transform: translate(175px , 0px);
+}
+#secondary #O_outline{
+	transform: translate(225px , -922.36px);
+}
+#secondary #O_fill{
+	transform: translate(225px , 0px);
+}
+#secondary #N_outline{
+	  transform: translate(290px , -922.36px);
+  }
+#secondary #N_fill{
+	transform: translate(290px , 0px);
+}
+#secondary #D_outline{
+	  transform: translate(350px , -922.36px);
+  }
+#secondary #D_fill{
+	transform: translate(350px , 0px);
+}
+#secondary #A{
+	 transform: translate(410px , 0px);
+ }
+#secondary #A{
+	transform: translate(410px , 0px);
+}
+#secondary #R{
+	transform: translate(475px , 0px);
+}
+#secondary #R{
+	transform: translate(475px , 0px);
+}
+#secondary #Y{
+	transform: translate(540px , 0px);
+}
+#secondary #Y{
+	transform: translate(540px , 0px);
+}
+/*//////////////////////////////////////////////
+ */
+#highschool #H_outline{
+	 transform: translate(0px , -922.36px);
+ }
+#highschool #H_fill{
+	transform: translate(0px , 0px);
+}
+#highschool #I_outline{
+	transform: translate(105px , -922.36px);
+}
+#highschool #I_fill{
+	transform: translate(105px , 0px);
+}
 
+#highschool #G_outline{
+	transform: translate(195px , -922.36px);
+}
+#highschool #G_fill{
+	transform: translate(195px , -922.36px);
+}
+#highschool #H_duplicate_outline0{
+	transform: translate(230px , -922.36px);
+}
+#highschool #H_duplicate_fill0{
+	transform: translate(230px , 0px);
+}
+#highschool #S_outline{
+	transform: translate(290px , -922.36px);
+}
+#highschool #S_fill{
+	transform: translate(290px , 0px);
+}
+#highschool #C_outline{
+	transform: translate(350px , -922.36px);
+}
+#highschool #C_fill{
+	transform: translate(350px , 0px);
+}
+#highschool #H_duplicate_outline1{
+	transform: translate(410px , -922.36px);
+}
+#highschool #H_duplicate_fill1{
+	 transform: translate(410px , 0px);
+ }
+#highschool #O_outline{
+	transform: translate(480px , -922.36px);
+}
+#highschool #O_fill{
+	transform: translate(480px , 0px);
+}
+#highschool #O_duplicate_outline0{
+	transform: translate(540px , -922.36px);
+}
+#highschool #O_duplicate_fill0{
+	transform: translate(540px , 0px);
+}
+#highschool #L_outline{
+	transform: translate(600px , -922.36px);
+}
+#highschool #L_fill{
+	transform: translate(600px , 0px);
+}
+/*////////////////////////////////////////////////////////////////////////
+
+ */
+#workexperience #W_outline{
+	 transform: translate(0px , -900px);
+ }
+#workexperience #W_fill{
+	transform: translate(0px , -900px);
+}
+#workexperience #O_outline{
+	 transform: translate(90px , -890px);
+ }
+#workexperience #O_fill{
+	transform: translate(90px , 42px);
+}
+#workexperience #R_outline{
+	transform: translate(180px , -900px);
+}
+#workexperience #R_fill{
+	transform: translate(180px , 51px);
+}
+#workexperience #K_outline{
+	transform: translate(245px , -900px);
+}
+#workexperience #K_fill{
+	transform: translate(245px , 32px);
+}
+
+#workexperience #E_outline{
+	transform: translate(390px , -900px);
+}
+#workexperience #E_fill{
+	transform: translate(390px , 32px);
+}
+#workexperience #X_outline{
+transform: translate(460px , -905px);
+}
+
+#workexperience #P_fill{
+	transform: translate(540px , -900px);
+}
+#workexperience #E_duplicate_outline0{
+	transform: translate(610px , -900px);
+}
+#workexperience #E_duplicate_fill0{
+	transform: translate(610px , 32px);
+}
+#workexperience #R_duplicate_outline0{
+	transform: translate(690px , -920px);
+}
+#workexperience #R_duplicate_fill0{
+	transform: translate(690px , 32px);
+}
+#workexperience #I_outline{
+	transform: translate(750px , -920px);
+}
+#workexperience #I_fill{
+	transform: translate(750px , 12px);
+}
+#workexperience #E_duplicate_outline1{
+	transform: translate(795px , -900px);
+}
+#workexperience #E_duplicate_fill1{
+	transform: translate(795px , 32px);
+}
+#workexperience #N_outline{
+	transform: translate(870px , -900px);
+}
+#workexperience #N_fill{
+	transform: translate(870px , 32px);
+}
+#workexperience #C_outline{
+	transform: translate(940px , -900px);
+}
+#workexperience #C_fill{
+	transform: translate(940px , 32px);
+}
+#workexperience #E_duplicate_outline2{
+	transform: translate(1000px , -900px);
+}
+#workexperience #E_duplicate_fill2{
+	transform: translate(1000px , 32px);
+}
+#gameglory #G_outline{
+	transform: translate(0px , -922.36px);
+}
+#gameglory #G_fill{
+	transform: translate(0px , -922.36px);
+}
+#gameglory #A_outline{
+	transform: translate(100px , -922.36px);
+}
+#gameglory #A_fill{
+	transform: translate(100px , 0px);
+}
+#gameglory #M_outline{
+	transform: translate(150px , -922.36px);
+}
+#gameglory #M_fill{
+	transform: translate(150px , 0px);
+}
+#gamelory #E_outline{
+	transform: translate(210px , -922.36px);
+}
+#gameglory #E_fill{
+	transform: translate(210px , 0px);
+}
+#gameglory #G_duplicate_outline0{
+	 transform: translate(280px , -922.36px);
+ }
+#gameglory #G_duplicate_fill0{
+	transform: translate(280px , -922.36px);
+}
+#gameglory #L_outline{
+	transform: translate(350px , -922.36px);
+}
+#gameglory #L_fill{
+	transform: translate(350px , 0px);
+}
+#gameglory #O_outline{
+	transform: translate(410px , -922.36px);
+}
+#gameglory #O_fill{
+	transform: translate(410px , 0px);
+}
+#gameglory #R_outline{
+	transform: translate(470px , -922.36px);
+}
+#gameglory #R_fill{
+	transform: translate(470px , 0px);
+}
+#gameglory #Y_outline{
+	transform: translate(530px , -922.36px);
+}
+#gameglory #Y_fill{
+	transform: translate(530px , 0px);
+}
+
+#apexsystems #A_outline{
+	transform: translate(0px , -922.36px);
+}
+#apexsystems #A_fill{
+	transform: translate(0px , 0px);
+}
+#apexsystems #p_outline{
+	transform: translate(75px , -922.36px);
+}
+#apexsystems #p_fill{
+	transform: translate(75px , 0px);
+}
+#apexsystems #E_outline{
+	transform: translate(140px , -922.36px);
+}
+#apexsystems #E_fill{
+	transform: translate(140px , 0px);
+}
+#apexsystems #X_outline{
+	transform: translate(200px , -922.36px);
+}
+#apexsystems #X_fill{
+	transform: translate(200px , 0px);
+}
+#apexsystems #S_outline{
+	transform: translate(250px , -922.36px);
+}
+#apexsystems #S_fill{
+	transform: translate(250px , 0px);
+}
+#apexsystems #Y_outline{
+	transform: translate(310px , -922.36px);
+}
+#apexsystems #Y_fill{
+	transform: translate(310px , 0px);
+}
+#apexsystems #S_duplicate_outline0{
+	transform: translate(380px , -922.36px);
+}
+#apexsystems #S_duplicate_fill0{
+	transform: translate(380px , 0px);
+}
+#apexsystems #T_outline{
+	transform: translate(450px , -922.36px);
+}
+#apexsystems #T_fill{
+	transform: translate(450px , 0px);
+}
+#apexsystems #E_duplicate_outline0{
+	transform: translate(500px , -922.36px);
+}
+#apexsystems #E_duplicate_fill0{
+	transform: translate(500px , 0px);
+}
+#apexsystems #M_outline{
+	transform: translate(570px , -922.36px);
+}
+#apexsystems #M_fill{
+	transform: translate(570px , 0px);
+}
+#apexsystems #S_duplicate_outline1{
+	transform: translate(630px , -922.36px);
+}
+#apexsystems #S_duplicate_fill1{
+	transform: translate(630px , 0px);
+}
+
+#garyline #G_outline{
+	transform: translate(0px , -922.36px);
+}
+#garyline #G_fill{
+	transform: translate(0px , 0px);
+}
+#garyline #A_outline{
+	transform: translate(60px , -922.36px);
+}
+#garyline #A_fill{
+	transform: translate(60px , 0px);
+}
+#garyline #R_outline{
+	transform: translate(120px , -922.36px);
+}
+#garyline #R_fill{
+	transform: translate(120px , 0px);
+}
+#garyline #Y_outline{
+	transform: translate(180px , -922.36px);
+}
+#garyline #Y_fill{
+	transform: translate(180px , 0px);
+}
+
+#garyline #L_outline{
+	transform: translate(240px , -922.36px);
+}
+#garyline #L_fill{
+	transform: translate(240px , 0px);
+}
+#garyline #I_outline{
+	transform: translate(300px , -922.36px);
+}
+#garyline #I_fill{
+	transform: translate(300px , 0px);
+}
+#garyline #N_outline{
+	transform: translate(360px , -922.36px);
+}
+#garyline #N_fill{
+	transform: translate(360px , 0px);
+}
+#garyline #E_outline{
+	transform: translate(420px , -922.36px);
+}
+#garyline #E_fill{
+	transform: translate(420px , 0px);
+}
+/*////////////////////////////////////////////////////////////////////////////////////////
+
+ */
+#instacart #I_outline{
+	 transform: translate(0px , -922.36px)
+ }
+#instacart #I_fill{
+	transform: translate(0px , 0px)
+}
+#instacart #N_outline{
+	transform: translate(70px , -922.36px)
+}
+#instacart #N_fill{
+	transform: translate(70px , 0px)
+}
+#instacart #S_outline{
+	transform: translate(130px , -922.36px)
+}
+#instacart #S_fill{
+	transform: translate(130px , 0px)
+}
+#instacart #T_outline{
+	transform: translate(180px , -922.36px)
+}
+#instacart #T_fill{
+	transform: translate(180px , 0px)
+}
+#instacart #A_outline{
+	transform: translate(230px , -922.36px)
+}
+#instacart #A_fill{
+	transform: translate(230px , 0px)
+}
+#instacart #C_outline{
+	transform: translate(290px , -922.36px)
+}
+#instacart #C_fill{
+	transform: translate(290px , 0px)
+}
+#instacart #A_duplicate_outline0{
+	transform: translate(340px , -922.36px)
+}
+#instacart #A_duplicate_fill0{
+	transform: translate(340px , 0px)
+}
+#instacart #R_outline{
+	transform: translate(390px , -922.36px)
+}
+#instacart #R_fill{
+	transform: translate(390px , 0px)
+}
+#instacart #T_duplicate_outline0{
+	transform: translate(4300px , -922.36px)
+}
+#instacart #T_duplicate_fill0{
+	transform: translate(430px , 0px)
+}
+/*///////////////////////////////////////
+
+ */
+#corporatecomputers #C_outline{
+	transform: translate(0px , -922.36px)
+}
+#corporatecomputers #C_fill{
+	transform: translate(0px , 0px)
+}
+#corporatecomputers #O_outline{
+	transform: translate(70px , -922.36px)
+}
+#corporatecomputers #O_fill{
+	transform: translate(70px , 0px)
+}
+#corporatecomputers #R_outline{
+	transform: translate(130px , -922.36px)
+}
+#corporatecomputers #R_fill{
+	transform: translate(130px , 0px)
+}
+#corporatecomputers #P_outline{
+	transform: translate(180px , -922.36px)
+}
+#corporatecomputers #P_fill{
+	transform: translate(180px ,  -922.36px)
+}
+#corporatecomputers #O_duplicate_outline0{
+	transform: translate(240px , -922.36px)
+}
+#corporatecomputers #O_duplicate_fill0{
+	transform: translate(240px , 0px)
+}
+#corporatecomputers #R_duplicate_outline0{
+	transform: translate(300px , -922.36px)
+}
+#corporatecomputers #R_duplicate_fill0{
+	transform: translate(300px , 0px)
+}
+#corporatecomputers #A_outline{
+	transform: translate(370px , -922.36px)
+}
+#corporatecomputers #A_fill{
+	transform: translate(370px , 0px)
+}
+#corporatecomputers #T_outline{
+	transform: translate(420px , -922.36px)
+}
+#corporatecomputers #T_fill{
+	transform: translate(420px , 0px)
+}
+#corporatecomputers #E_outline{
+	transform: translate(420px , -922.36px)
+}
+#corporatecomputers #E_fill{
+	transform: translate(420px , 0px)
+}
+#corporatecomputers #C_duplicate_outline0{
+	transform: translate(470px , -922.36px)
+}
+#corporatecomputers #C_duplicate_fill0{
+	transform: translate(470px , 0px)
+}
+#corporatecomputers #O_duplicate_outline1{
+	transform: translate(530px , -922.36px)
+}
+#corporatecomputers #O_duplicate_fill1{
+	transform: translate(530px , 0px)
+}
+#corporatecomputers #M_outline{
+	transform: translate(570px , -922.36px)
+}
+#corporatecomputers #M_fill{
+	transform: translate(570px , 0px)
+}
+#corporatecomputers #P_duplicate_outline0{
+	transform: translate(630px , -922.36px)
+}
+#corporatecomputers #P_duplicate_fill0{
+	transform: translate(630px , -922.36px)
+}
+#corporatecomputers #U_outline{
+	transform: translate(680px , -922.36px)
+}
+#corporatecomputers #U_fill{
+	transform: translate(680px , 0px)
+}
+#corporatecomputers #T_duplicate_outline0{
+	transform: translate(750px , -922.36px)
+}
+#corporatecomputers #T_duplicate_fill0{
+	transform: translate(750px , 0px)
+}
+#corporatecomputers #E_duplicate_outline0{
+	transform: translate(810px , -922.36px)
+}
+#corporatecomputers #E_duplicate_fill0{
+	transform: translate(810px , 0px)
+}
+#corporatecomputers #R_duplicate_outline1{
+	transform: translate(880px , -922.36px)
+}
+#corporatecomputers #R_duplicate_fill1{
+	transform: translate(880px , 0px)
+}
+#corporatecomputers #S_outline{
+	transform: translate(950px , -922.36px)
+}
+#corporatecomputers #S_fill{
+	transform: translate(950px , 0px)
+}
+/*//////////////////////////////////////////////////////////////////////
+
+ */
+#wnet #W_fill{
+	transform: translate(0px , -922.36px)
+}
+#wnet #N_outline{
+	transform: translate(60px , -922.36px)
+}
+#wnet #N_fill{
+	transform: translate(60px , 0px)
+}
+#wnet #E_outline{
+	transform: translate(110px , -922.36px)
+}
+#wnet #E_fill{
+	transform: translate(110px , 0px)
+}
+#wnet #T_outline{
+	transform: translate(180px , -922.36px)
+}
+#wnet #T_fill{
+	transform: translate(180px , 0px)
+}
+/*//////////////////////////////////////////////////////////////////////
+
+ */
+#staples #S_outline{
+	transform: translate(0px , -922.36px)
+}
+#staples #S_fill{
+	transform: translate(0px , 0px)
+}
+#staples #T_outline{
+	transform: translate(60px , -922.36px)
+}
+#staples #T_fill{
+	transform: translate(60px , 0px)
+}
+#staples #A_outline{
+	transform: translate(110px , -922.36px)
+}
+#staples #A_fill{
+	transform: translate(110px , 0px)
+}
+#staples #P_outline{
+	transform: translate(170px , -922.36px)
+}
+#staples #P_fill{
+	transform: translate(170px , -922.36px)
+}
+#staples #L_outline{
+	transform: translate(230px , -922.36px)
+}
+#staples #L_fill{
+	transform: translate(230px , 0px)
+}
+#staples #E_outline{
+	transform: translate(290px , -922.36px)
+}
+#staples #E_fill{
+	transform: translate(290px , 0px)
+}
+#staples #S_duplicate_outline0{
+	transform: translate(360px , -922.36px)
+}
+#staples #S_duplicate_fill0{
+	transform: translate(360px , 0px)
+}
+/*///////////////////////////////////////////////////////////////////
+
+ */
+#redemtech #R_outline{
+	transform: translate(0px , -922.36px)
+}
+#redemtech #R_fill{
+	transform: translate(0px , 0px)
+}
+#redemtech #E_outline{
+	 transform: translate(60px , -922.36px)
+ }
+#redemtech #E_fill{
+	transform: translate(60px , 0px)
+}
+#redemtech #D_outline{
+	transform: translate(120px , -922.36px)
+}
+#redemtech #D_fill{
+	transform: translate(120px , 0px)
+}
+#redemtech #E_duplicate_outline0{
+	transform: translate(180px , -922.36px)
+}
+#redemtech #E_duplicate_fill0{
+	transform: translate(180px , 0px)
+}
+#redemtech #M_outline{
+	transform: translate(240px , -922.36px)
+}
+#redemtech #M_fill{
+	transform: translate(240px , 0px)
+}
+#redemtech #T_outline{
+	transform: translate(300px , -922.36px)
+}
+#redemtech #T_fill{
+	transform: translate(300px , 0px)
+}
+#redemtech #E_duplicate_outline1{
+	transform: translate(360px , -922.36px)
+}
+#redemtech #E_duplicate_fill1{
+	transform: translate(360px , 0px)
+}
+#redemtech #C_outline{
+	transform: translate(410px , -922.36px)
+}
+#redemtech #C_fill{
+	transform: translate(410px , 0px)
+}
+#redemtech #H_outline{
+	transform: translate(470px , -922.36px)
+}
+#redemtech #H_fill{
+	transform: translate(470px , 0px)
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ */
+#hookproductions #H_outline{
+	 transform: translate(0px , -922.36px)
+ }
+#hookproductions #H_fill{
+	transform: translate(0px , 0px)
+}
+#hookproductions #O_outline{
+	transform: translate(50px , -922.36px)
+}
+#hookproductions #O_fill{
+	transform: translate(50px , 0px)
+}
+#hookproductions #O_duplicare_outline0{
+	transform: translate(120px , -922.36px)
+}
+#hookproductions #O_duplicate_fill0{
+	transform: translate(120px , 0px)
+}
+#hookproductions #K_outline{
+	transform: translate(180px , -922.36px)
+}
+#hookproductions #K_fill{
+	transform: translate(180px , 0px)
+}
+#hookproductions #P_outline{
+	transform: translate(230px , -922.36px)
+}
+#hookproductions #P_fill{
+	transform: translate(230px , 0px)
+}
+#hookproductions #R_outline{
+	transform: translate(280px , -922.36px)
+}
+#hookproductions #R_fill{
+	transform: translate(280px , 0px)
+}
+#hookproductions #O_duplicate_outline1{
+	transform: translate(330px , -922.36px)
+}
+#hookproductions #O_duplicate_fill1{
+	transform: translate(330px , 0px)
+}
+#hookproductions #D_outline{
+	transform: translate(390px , -922.36px)
+}
+#hookproductions #D_fill{
+	transform: translate(390px , 0px)
+}
+#hookproductions #U_outline{
+	transform: translate(450px , -922.36px)
+}
+#hookproductions #U_fill{
+	transform: translate(450px , 0px)
+}
+#hookproductions #C_outline{
+	transform: translate(510px , -922.36px)
+}
+#hookproductions #C_fill{
+	transform: translate(510px , 0px)
+}
+#hookproductions #T_outline{
+	transform: translate(580px , -922.36px)
+}
+#hookproductions #T_fill{
+	transform: translate(580px , 0px)
+}
+#hookproductions #I_outline{
+	 transform: translate(650px , -922.36px)
+ }
+#hookproductions #I_fill{
+	transform: translate(650px , 0px)
+}
+#hookproductions #O_duplicate_outline2{
+	transform: translate(720px , -922.36px)
+}
+#hookproductions #O_duplicate_fill2{
+	transform: translate(720px , 0px)
+}
+#hookproductions #N_outline{
+	transform: translate(780px , -922.36px)
+}
+#hookproductions #N_fill{
+	transform: translate(780px , 0px)
+}
+#hookproductions #S_outline{
+	transform: translate(840px , -922.36px)
+}
+#hookproductions #S_fill{
+	transform: translate(840px , 0px)
+}
+/*//////////////////////////////////////////////////////////////////////
+
+ */
+#ikea #I_outline{
+	 transform: translate(0px , -922.36px)
+ }
+#ikea #I_fill{
+	transform: translate(0px , 0px)
+}
+#ikea #K_outline{
+	transform: translate(70px , -922.36px)
+}
+#ikea #K_fill{
+	transform: translate(70px , 0px)
+}
+#ikea #E_outline{
+	transform: translate(120px , -922.36px)
+}
+#ikea #E_fill{
+	transform: translate(120px , 0px)
+}
+#ikea #A_outline{
+	transform: translate(170px , -922.36px)
+}
+#ikea #A_fill{
+	transform: translate(170px , 0px)
+}

@@ -177,9 +177,9 @@ class ResumePage extends Page{
 	    </svg>
 		<div id='technical_skills_section' class='resume_section' data-active_section='on'>
 			
-		{$this->bubble_letters->makeWord("Technical Skills", 'technicalskills',"0 0 1150 100" , 300, null)}
+		{$this->bubble_letters->makeWord("Technical Skills", 'technicalskills',"0 0 1150 190" , 110, null)}
 				<div id='technical_skills_menu'>
-					<div id='hardware_technical_skills_list' >
+					<div id='hardware_technical_skills_list' class='menu'>
 						<a href='#' onclick='Resume.TechnicalSkillsSection.toggleMenuVisibility(\"#hardware_menu\")'>{$this->bubble_letters->makeWord("Hardware",'hardware', "0 0 1000 1" , 80, 200)}</a>
 						<p id='hardware_menu' >
 						 Troubleshoot and Install for PCs and Macs
@@ -189,7 +189,7 @@ class ResumePage extends Page{
 								
 						
 					</div>
-					<div id='software_technical_skills_list' >
+					<div id='software_technical_skills_list' class='menu'>
 						<a href='#' >{$this->bubble_letters->makeWord("Software", 'software',"0 0 1000 1" , 100, 200)}</a>
 						<p id='software_menu' >
 						   HTML, CSS, Javascript, MYSQL, C/C++, BASH unix scripting, Java, Windows Batch and Powershell scripting, Active Directory Domain Services, Windows Server, WAMP , VMWare, Hyper-V, etc...
@@ -200,26 +200,29 @@ class ResumePage extends Page{
 			
 		</div>
 		<div id='education_section' class='resume_section' data-active_section='off'>
-			{$this->bubble_letters->makeWord("Education", 'education',"0 0 1150 100" , 300, null)}
+			{$this->bubble_letters->makeWord("Education", 'education',"0 0 1150 200" , 110, null)}
 			<div id='education_list'>
-					<div id='college_education_list' >
-						<a href='#'>{$this->bubble_letters->makeWord("College", 'college', "0 0 115 100" , 100, null)}</a>
-						<p id='college_menu' >
-						 Borough of Manhattan Community College (BMCC)
+					<div id='college_education_list' class='menu'>
+						<a href='#'>{$this->bubble_letters->makeWord("College", 'college', "0 0 1000 1" , 80, 200)}</a>
+						<p id='college_menu' class='menu'>
+						<a href='www.bmcc.cuny.edu'> Borough of Manhattan Community College (BMCC)</a>
 						</p>
 						
 						
 					</div>
-					<div id='secondary_education_list' >
-						<a href='#' >{$this->bubble_letters->makeWord("Secondary", 'secondary',"0 0 115 100" , 100, null)}</a>
-						<p id='secondary_education_menu' >
+					<div id='secondary_education_list' class='menu'>
+						<a href='#' >{$this->bubble_letters->makeWord("Secondary", 'secondary',"0 0 1000 1" , 80, 200)}</a>
+						<p id='secondary_education_menu'class='menu' >
 								<a href='https://perscholas.org/' target='_blank'>Per Scholas Institute for Technology</a>
+								<br/>
+								<a href='https://yearup.org/' target='_blank'>Year Up</a>
+								
 								
 						</p>
 					</div>
-					<div id='highschool_education_list' >
-						<a href='#' >{$this->bubble_letters->makeWord("HighSchool", 'highschool',"0 0 115 100" , 100, null)}</a>
-						<p id='highschool_education_menu' >
+					<div id='highschool_education_list' class='menu'  >
+						<a href='#' >{$this->bubble_letters->makeWord("HighSchool", 'highschool',"0 0 1000 1" , 80, 200)}</a>
+						<p id='highschool_education_menu' class='menu'>
 								<a href=''>South Brooklyn Community High School</a>
 							
 						</p>
@@ -227,42 +230,253 @@ class ResumePage extends Page{
 				</div>
 		</div>
 		<div id='work_section' class='resume_section' data-active_section='off'>
-			{$this->bubble_letters->makeWord("Work Experience", "0 0 1150 100" , 300, null)}
+			{$this->bubble_letters->makeWord("Work Experience", "workexperience" , "0 0 1150 210", 110 , null)}
 			<div id='work_experience_list'>
-					<div id='apex_viacom_menu' >
-						<a href='#'>{$this->bubble_letters->makeWord("apex systems",'apexsystems', "0 0 115 100" , 100, null)}</a>
-						<p id='college_menu' >
+			<div id='gameglory_menu' class='menu'>
+			
+						<a href='#'>{$this->bubble_letters->makeWord("gameglory",'gameglory', "0 0 1000 1" , 80, 200)}</a>
+						<div class='job_title_container'>
+			<span class='job_title'>
+			     Web Developer
+			</span>
+			<span class='workdate'> 
+							1/2017 - present
+						</span>
+			</div>
+						
+						<p id='gameglory_menu' >
 						 <ul>
 						 	<li>
-						 		phones
+						 		Daily tech consultaion with the president of the company
 							</li>
+							<li>
+						 		Bulit web site interface, and  backend 
+							</li>
+							
 						 </ul>
 						</p>
 						
 						
 					</div>
-					<div id='garyline_menu' >
-						<a href='#' >{$this->bubble_letters->makeWord("GaryLine",'garyline', "0 0 115 100" , 100, null)}</a>
+					<div id='apex_menu' class='menu'>
+						<a href='#'>{$this->bubble_letters->makeWord("apex systems",'apexsystems', "0 0 1000 1" , 80, 200)}</a>
+					<div class='job_title_container'>
+			<span class='job_title'>
+			     Service Desk Analyst@(Viacom)
+			</span>
+			<span class='workdate'> 
+							10/2017 - 11/2017
+			</span>
+			</div>
+						
+							<p id='apex_menu' >
+						 <ul>
+						 	<li>
+						 		 Averaged 60 ‘taken’ and ‘resolved’ calls per day   
+							</li>
+							<li>
+							Modified AD user accounts across 10 different domains
+						</li>
+						<li>
+						Resolved over 500 service desk tickets
+						</li>
+						 </ul>
+						</p>
+						
+						
+					</div>
+					<div id='garyline_menu'class='menu' >
+						<a href='#' >{$this->bubble_letters->makeWord("GaryLine",'garyline', "0 0 1000 1" , 80, 200)}</a>
+						<div class='job_title_container'>
+			<span class='job_title'>
+			     Help Desk Technician / Computer Programmer
+			</span>
+			<span class='workdate'> 
+							5/2016 - 7/2016
+			</span>
+			</div>
 						<p id='garyline_menu' >
 								<ul>
 									<li>
-										tech
-										</li>
+										Automated creating new users with Powershell and Selenium scripts 
+									</li>
+									<li>
+									Created programs with Powershell to streamline business processes 
+									</li>
+									<li>
+									Monitored print servers , and fixed printer issues when detected
+									</li>
+									<li>
+									Maintained PBX phone system, and discovered new ways to use it
+									</li>
+									<li>
+									Created , and maintained AD users and Exchange emails mailboxes 
+									</li>
+									<li>
+									Created and , Closed over 150 helpdesk tickets 
+									</li>
+									<li>
+									Created User Profiles for the IBM AS/400 via Windows Access Client
+									</li>
+
 								</ul>
 								
 						</p>
 					</div>
-					<div id='instacart_menu >
-						<a href='#' >{$this->bubble_letters->makeWord("instacart", 'instacart',"0 0 115 100" , 100, null)}</a>
+					<div id='instacart_menu' class='menu'>
+						<a href='#' >{$this->bubble_letters->makeWord("instacart", 'instacart',"0 0 1000 1" , 80, 200)}</a>
+						<div class='job_title_container'>
+			<span class='job_title'>
+			     Shopper
+			</span>
+			<span class='workdate'> 
+							11/2015 - 3/2016
+			</span>
+			</div>
 						<p id='instacart_menu' >
 								<ul>
 									<li>
-										bags
+										Shopped for customers grocery items in WholeFoods market   
+									</li>
+									<li>
+									 
 									</li>
 								</ul>
 							
 						</p>
 					</div>
+					
+					<div id='corporatecomputers_menu' class='menu' >
+						<a href='#' >{$this->bubble_letters->makeWord("corporate computers", 'corporatecomputers',"0 0 1000 1" , 80, 200)}</a>
+						<p id='corporatecomputers_menu' >
+								<ul>
+									<li>
+										Provided over 100 PC set ups, repairing and installing hardware parts for Desktops, Laptops and HP Printers.
+									</li>
+									<li>
+								   	Troubleshot multiple HP Printers: Replaced parts, toners, fuser, belts and formatters.
+ 									proprietary software upgrades in different business settings: Corporate, Medical & Private practices.
+
+									</li>
+								</ul>
+							
+						</p>
+					</div>
+					<div id='wnet_menu' class='menu'>
+						<a href='#' >{$this->bubble_letters->makeWord("wnet", 'wnet',"0 0 1000 1" , 80, 200)}</a>
+						<div class='job_title_container'>
+			<span class='job_title'>
+			     Help Desk Technician
+			</span>
+			<span class='workdate'> 
+							10/2012 - 2/2013
+			</span>
+			</div>
+						<p id='wnet_menu' >
+								<ul>
+									<li>
+										Repaired & Installed hardware parts for Desktops 
+									</li>
+									<li>
+										Performed over 100 PC set ups for new and moving employees 
+									</li>
+									<li>
+									Assisted Managing User Profiles, Migrating User Profile Data
+									</li>
+									<li>
+									 Averaged closing about 5 – 10 help desk tickets a day on propietry ticket system
+									</li>
+									<li>
+									Analyzed and fixed various hardware and software errors using programs such as Recovery Console
+									</li>
+									<li>
+									Assisted Users over the phone and in person with software and hardware issues 
+									</li>
+									<li>
+								Updated Room Reservation List every morning for all three floors of the company
+									</li>
+								</ul>
+							
+						</p>
+					</div>
+					<div id='staples_menu' class='menu'>
+						<a href='#' >{$this->bubble_letters->makeWord("staples", 'staples',"0 0 1000 1" , 80, 200)}</a>
+						<div class='job_title_container'>
+			<span class='job_title'>
+			     Sales Associate / Easy Tech
+			</span>
+			<span class='workdate'> 
+							5/2016 - 7/2016
+			</span>
+			</div>
+							<p id='staples_menu' >
+								<ul>
+									<li>
+										Backed up customer data
+									</li>
+									<li>
+										Sold computer hardware products to customers
+									</li>
+									
+								</ul>
+							
+						</p>
+					</div>
+					<div id='redemtech_menu' class='menu'>
+					<div class='job_title_container'>
+			<span class='job_title'>
+			    Production Technician 
+			</span>
+			<span class='workdate'> 
+							10/2010 - 1/2011
+			</span>
+			</div>
+						<a href='#' >{$this->bubble_letters->makeWord("redemtech", 'redemtech',"0 0 1000 1" , 80, 200)}</a>
+						<p id='redemtech_menu' >
+								<ul>
+									<li>
+										Refurbished over 1,000 Computers (Desktops, Laptops and Servers)
+									</li>
+									<li>
+										Worked with proprietary software to wipe and test HDDs
+									</li>
+									<li>
+										Recycled obsolete and unwanted computers and peripheral parts
+									</li>
+									<li>
+										Met company’s daily quota for functional PC, Laptops and Printers for resale or donation
+									</li>
+								
+								</ul>
+							
+						</p>
+					</div>
+					<div id='hookproductions_menu' class='menu' >
+						<a href='#' >{$this->bubble_letters->makeWord("hook productions", 'hookproductions',"0 0 1000 1" , 80, 200)}</a>
+						<div class='job_title_container'>
+			<span class='job_title'>
+			    Intern
+			</span>
+			<span class='workdate'> 
+							8/2008 - 1/2010
+			</span>
+			</div>
+						<p id='hookproductions_menu' >
+								<ul>
+									<li>
+										Created 3-D models, such as buildings and animation, using Blender, an open source program
+									</li>
+									<li>
+										Received special certificate of recognition for exemplary work in the creation of 3-D models    
+									</li>
+									<li>
+										Produced music using Reason software
+									</li>
+								</ul>
+							
+						</p>
+					</div>
+				
 				</div>
 			
 		</div>
@@ -286,10 +500,12 @@ class ResumePage extends Page{
 			
 			{$this->bubble_letters->makeWord("benny dorlisme", 'bennydorlisme' ,"0 0 1150 100" , null, 325)}
 			<div id='resume_contact_info'>
-			<a href='Benny_Dorlisme_resume.docx'>Download Resume</a>
+			<a href='Dorlisme_Benny_Resume_IT.docx.docx'> Download Resume 1</a>
+			
+				<a href='Dorlisme_Benny_Resume_QA_Dev.docx'> Download Resume 2</a>
 				<br/>	
 				<span>251 Osborn St Brooklyn, NY 11212</span>
-				<br/>
+			
 				<span>BennyDorlisme@gmail.com</span>
 				
 				<div  > <a href='https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=4T7DVJY12MB15M8L' >{$this->a_plus_logo}</a> <a href='https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=4T7DVJY12MB15M8L'> {$this->net_plus_logo}</a>

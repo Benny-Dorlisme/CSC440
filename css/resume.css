@@ -1,8 +1,13 @@
+.menu a:nth-child(n) {
+display:block;
+	margin:0px auto;
+}
 #hardware #H_outline{
 	transform:translate(0px, -932.36px);
 }
 #hardware #H_fill{
 	transform:translate(0px, 0px);
+	fill:red;
 }
 #hardware #A_outline{
 transform:translate(90px, -932.36px);
@@ -103,13 +108,20 @@ transform:translate(500px, 0px);
 		margin:0px auto;
 	}
 	#left_arrow{
-		 filter: drop-shadow( -5px 0px 1px #000 );
+		 filter: drop-shadow( -2px 1px 1px #000 );
 		 margin-left:3%;
 	}
+#left_arrow:active{
+	filter: drop-shadow( 0px 0px 1px #000 );
+}
 	#right_arrow{
-		 filter: drop-shadow( 5px 0px 1px #000 );
+		 filter: drop-shadow( 2px 1px 1px #000 );
 		 margin-left:1%;
 	}
+#right_arrow:active {
+	filter: drop-shadow( 0px 0px 1px #000 );
+}
+
 #resume_contact_info{
 	
 	margin:0px;
@@ -128,8 +140,11 @@ transform:translate(500px, 0px);
 	#resume_contact_info > div{
 		padding-left:9%;
 	}
+	.resume_section > svg{
+
+	}
 #technicalskills{
-	margin-left:10%;
+
 }
 #technical_skills_section{
 	margin-left:3%;
@@ -139,21 +154,21 @@ transform:translate(500px, 0px);
 	padding:0px;
 }
 #hardware_technical_skills_list a{
-    margin:0px auto;
-	padding:0px 2px;
-	width:17%;
-	display:	block;
+
 	
+}
+.menu{
+	text-shadow: -1px 1px 2px black;
 }
 #hardware_menu{
-	width:100%;
-	
+
+
+}
+#software_menu{
+
 }
 #software_technical_skills_list a{
-	margin:0px auto;
-	padding:0px 2px;
-	width:17%;
-	display:	block;
+
 	
 }
 
@@ -162,7 +177,9 @@ transform:translate(500px, 0px);
 	margin:0px 0px 0px 4%;
 	
 }
-
+#education{
+	margin-left:10%;
+}
 [data-active_section='on']{
 	visibility:visible;
 	display:inline-block;
