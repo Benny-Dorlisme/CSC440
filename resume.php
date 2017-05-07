@@ -171,7 +171,7 @@ class ResumePage extends Page{
 	public function setPageBodyBody(){
 		$this->page_body_body = "<div id='page_content_body'>
 	
-	<svg id='left_arrow' onclick='Resume.toggleSectionVisibility(0)' style='width:100px; vertical-align:top; margin-top:10%;'>
+	<svg id='left_arrow' onclick='Resume.toggleSectionVisibility(0)' >
 		
 		    <path  style='fill:red;stroke:#000000;' d='m0 50 L100 0 L100 100z'/>
 	    </svg>
@@ -180,7 +180,7 @@ class ResumePage extends Page{
 		{$this->bubble_letters->makeWord("Technical Skills", 'technicalskills',"0 0 1150 190" , 110, null)}
 				<div id='technical_skills_menu'>
 					<div id='hardware_technical_skills_list' class='menu'>
-						<a href='#' onclick='Resume.TechnicalSkillsSection.toggleMenuVisibility(\"#hardware_menu\")'>{$this->bubble_letters->makeWord("Hardware",'hardware', "0 0 1000 1" , 80, 200)}</a>
+						<div >{$this->bubble_letters->makeWord("Hardware",'hardware', "0 0 1000 1" , 80, 200)}</div>
 						<p id='hardware_menu' >
 						 Troubleshoot and Install for PCs and Macs
 							
@@ -190,7 +190,7 @@ class ResumePage extends Page{
 						
 					</div>
 					<div id='software_technical_skills_list' class='menu'>
-						<a href='#' >{$this->bubble_letters->makeWord("Software", 'software',"0 0 1000 1" , 100, 200)}</a>
+						<div >{$this->bubble_letters->makeWord("Software", 'software',"0 0 1000 1" , 100, 200)}</div>
 						<p id='software_menu' >
 						   HTML, CSS, Javascript, MYSQL, C/C++, BASH unix scripting, Java, Windows Batch and Powershell scripting, Active Directory Domain Services, Windows Server, WAMP , VMWare, Hyper-V, etc...
 						</p>
@@ -203,29 +203,29 @@ class ResumePage extends Page{
 			{$this->bubble_letters->makeWord("Education", 'education',"0 0 1150 200" , 110, null)}
 			<div id='education_list'>
 					<div id='college_education_list' class='menu'>
-						<a href='#'>{$this->bubble_letters->makeWord("College", 'college', "0 0 1000 1" , 80, 200)}</a>
-						<p id='college_menu' class='menu'>
+						<div >{$this->bubble_letters->makeWord("College", 'college', "0 0 1000 1" , 80, 200)}</div>
+					
 						<a href='www.bmcc.cuny.edu'> Borough of Manhattan Community College (BMCC)</a>
-						</p>
+					
 						
 						
 					</div>
 					<div id='secondary_education_list' class='menu'>
-						<a href='#' >{$this->bubble_letters->makeWord("Secondary", 'secondary',"0 0 1000 1" , 80, 200)}</a>
-						<p id='secondary_education_menu'class='menu' >
+						<div>{$this->bubble_letters->makeWord("Secondary", 'secondary',"0 0 1000 1" , 80, 200)}</div>
+					
 								<a href='https://perscholas.org/' target='_blank'>Per Scholas Institute for Technology</a>
 								<br/>
 								<a href='https://yearup.org/' target='_blank'>Year Up</a>
 								
 								
-						</p>
+					
 					</div>
 					<div id='highschool_education_list' class='menu'  >
-						<a href='#' >{$this->bubble_letters->makeWord("HighSchool", 'highschool',"0 0 1000 1" , 80, 200)}</a>
-						<p id='highschool_education_menu' class='menu'>
+						<div >{$this->bubble_letters->makeWord("HighSchool", 'highschool',"0 0 1000 1" , 80, 200)}</div>
+					
 								<a href=''>South Brooklyn Community High School</a>
 							
-						</p>
+				
 					</div>
 				</div>
 		</div>
@@ -234,7 +234,8 @@ class ResumePage extends Page{
 			<div id='work_experience_list'>
 			<div id='gameglory_menu' class='menu'>
 			
-						<a href='#'>{$this->bubble_letters->makeWord("gameglory",'gameglory', "0 0 1000 1" , 80, 200)}</a>
+						<div >
+						{$this->bubble_letters->makeWord("gameglory",'gameglory', "0 0 1000 1" , 80, 200)}
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Web Developer
@@ -243,8 +244,10 @@ class ResumePage extends Page{
 							1/2017 - present
 						</span>
 			</div>
+						</div>
 						
-						<p id='gameglory_menu' >
+						
+					
 						 <ul>
 						 	<li>
 						 		Daily tech consultaion with the president of the company
@@ -254,22 +257,25 @@ class ResumePage extends Page{
 							</li>
 							
 						 </ul>
-						</p>
+					
 						
 						
 					</div>
 					<div id='apex_menu' class='menu'>
-						<a href='#'>{$this->bubble_letters->makeWord("apex systems",'apexsystems', "0 0 1000 1" , 80, 200)}</a>
-					<div class='job_title_container'>
+						<div >
+						{$this->bubble_letters->makeWord("apex systems",'apexsystems', "0 0 1000 1" , 80, 200)}
+						<div class='job_title_container'>
 			<span class='job_title'>
-			     Service Desk Analyst@(Viacom)
+			     Service Desk Analyst
 			</span>
 			<span class='workdate'> 
 							10/2017 - 11/2017
 			</span>
+						</div>
+					
 			</div>
 						
-							<p id='apex_menu' >
+							
 						 <ul>
 						 	<li>
 						 		 Averaged 60 ‘taken’ and ‘resolved’ calls per day   
@@ -281,15 +287,15 @@ class ResumePage extends Page{
 						Resolved over 500 service desk tickets
 						</li>
 						 </ul>
-						</p>
+						
 						
 						
 					</div>
 					<div id='garyline_menu'class='menu' >
-						<a href='#' >{$this->bubble_letters->makeWord("GaryLine",'garyline', "0 0 1000 1" , 80, 200)}</a>
+						<div >{$this->bubble_letters->makeWord("GaryLine",'garyline', "0 0 1000 1" , 80, 200)}</div>
 						<div class='job_title_container'>
 			<span class='job_title'>
-			     Help Desk Technician / Computer Programmer
+			     Help Desk Technician
 			</span>
 			<span class='workdate'> 
 							5/2016 - 7/2016
@@ -324,7 +330,7 @@ class ResumePage extends Page{
 						</p>
 					</div>
 					<div id='instacart_menu' class='menu'>
-						<a href='#' >{$this->bubble_letters->makeWord("instacart", 'instacart',"0 0 1000 1" , 80, 200)}</a>
+						<div >{$this->bubble_letters->makeWord("instacart", 'instacart',"0 0 1000 1" , 80, 200)}</div>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Shopper
@@ -480,7 +486,7 @@ class ResumePage extends Page{
 				</div>
 			
 		</div>
-			<svg id='right_arrow' onclick='Resume.toggleSectionVisibility(1)'  style='width:100px; vertical-align:top; margin-top:10%;'>
+			<svg id='right_arrow' onclick='Resume.toggleSectionVisibility(1)'  >
 		
 		    <path style='fill:red;stroke:#000000;' d='m0 0 L100 50 L0 100z'/>
 	    </svg>
@@ -500,9 +506,9 @@ class ResumePage extends Page{
 			
 			{$this->bubble_letters->makeWord("benny dorlisme", 'bennydorlisme' ,"0 0 1150 100" , null, 325)}
 			<div id='resume_contact_info'>
-			<a href='Dorlisme_Benny_Resume_IT.docx.docx'> Download Resume 1</a>
+			<a href='Dorlisme_Benny_Resume_IT.docx'> Download IT Resume </a>
 			
-				<a href='Dorlisme_Benny_Resume_QA_Dev.docx'> Download Resume 2</a>
+				<a href='Dorlisme_Benny_Resume_QA_Dev.docx'> Download QA/Dev Resume </a>
 				<br/>	
 				<span>251 Osborn St Brooklyn, NY 11212</span>
 			

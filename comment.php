@@ -3,11 +3,6 @@
 
 $d = new PDO("mysql:host=db679312378.db.1and1.com;dbname=db679312378","dbo679312378","Real_numbers101!");
 
-
-
-
-
-
 $first_name = $_GET['fname'];
 $last_name = $_GET['lname'];
 $comment = $_GET['comment'];

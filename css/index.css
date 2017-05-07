@@ -66,7 +66,8 @@
 		border:0px;
 		font-family:Georgia, "Times New Roman", Times, serif;
 		color:white;
-	
+		width:80%;
+		margin: 0 auto;
 	}
 	#page_header header span
 	{
@@ -122,7 +123,7 @@
 	{
 		 margin: 0 auto;
 		 width:80%; 
-		 color:white; 
+		 color:white;
 	
 		 
 	
@@ -139,8 +140,8 @@
 
 	}
 	#page_content a
-	{ 
-		color:blue;
+	{
+
 	}
 	
 	#page_footer
@@ -168,7 +169,22 @@
 	{
 		width:75%;
 	}
-	
+	#comment_box{
+		resize: none;
+		width:30%;
+
+	}
+.comment{
+margin-bottom:1%;
+
+}
+#comment_form
+{
+	margin-bottom: 3%;
+}
+#comment_form input{
+	margin:1% 0px;
+}
 	#contact
 	{ 
 	width:50%;

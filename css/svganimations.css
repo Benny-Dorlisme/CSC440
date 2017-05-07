@@ -556,6 +556,9 @@ transform:translate(0px,0px);
 /*////////////////////////////////////////////////////////////////////////
 
  */
+#workexperience{
+	margin-left:13%;
+}
 #workexperience #W_outline{
 	 transform: translate(0px , -900px);
  }

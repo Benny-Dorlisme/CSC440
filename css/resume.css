@@ -2,6 +2,8 @@
 display:block;
 	margin:0px auto;
 }
+
+
 #hardware #H_outline{
 	transform:translate(0px, -932.36px);
 }
@@ -110,6 +112,9 @@ transform:translate(500px, 0px);
 	#left_arrow{
 		 filter: drop-shadow( -2px 1px 1px #000 );
 		 margin-left:3%;
+		width:100px;
+		vertical-align:top;
+		margin-top:25%;
 	}
 #left_arrow:active{
 	filter: drop-shadow( 0px 0px 1px #000 );
@@ -117,6 +122,9 @@ transform:translate(500px, 0px);
 	#right_arrow{
 		 filter: drop-shadow( 2px 1px 1px #000 );
 		 margin-left:1%;
+		width:100px;
+		vertical-align:top;
+		margin-top:25%;
 	}
 #right_arrow:active {
 	filter: drop-shadow( 0px 0px 1px #000 );
@@ -144,7 +152,7 @@ transform:translate(500px, 0px);
 
 	}
 #technicalskills{
-
+margin-left:5%
 }
 #technical_skills_section{
 	margin-left:3%;
@@ -159,6 +167,34 @@ transform:translate(500px, 0px);
 }
 .menu{
 	text-shadow: -1px 1px 2px black;
+	font-size:1.1em;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: -5px 1px 5px grey;
+	margin-bottom:5%;
+	padding:1% 1%;
+
+}
+.menu:active{
+	box-shadow: -1px 0px 1px grey;
+}
+.menu ul li {
+	margin-top:3%;
+}
+.menu a{
+	text-decoration: none;
+	color:red;
+	width:50%;
+
+}
+.job_title{
+
+	font-style: italic;
+	float:left;
+
+}
+.workdate{
+	float:right;
 }
 #hardware_menu{
 
@@ -174,11 +210,14 @@ transform:translate(500px, 0px);
 
 .resume_section{
 	width:70%; 
-	margin:0px 0px 0px 4%;
+	margin:0px 0px 5% 4%;
 	
 }
+#workexperience {
+
+}
 #education{
-	margin-left:10%;
+	margin-left:20%;
 }
 [data-active_section='on']{
 	visibility:visible;
