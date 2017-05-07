@@ -12,13 +12,14 @@ class ConsultingPage extends Page{
         $this->m = array("<meta charset='utf-8'>","<meta content='https://www.bennydorlisme.com/' property='og:site_name'>"."<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='Benny Dorlisme Consutling'>","<meta name='keywords' content='Benny Dorlisme Tech'>");
         $this->setPageBodyHeader();
         $this->setPageBodyBody();
+        $this->setPageBodyFooter();
         parent::__construct($this->s,$this->m,$this->l , ($this->page_body_header . $this->page_body_body));
 
     }
     public function setPageBodyBody(){
         $this->page_body_body = "  
   <div id='page_content_body'>
- 
+      
                 
                 	<div  id='container_for_all_forms'>
                     	
@@ -147,13 +148,18 @@ class ConsultingPage extends Page{
             	<h2>Consulting</h2>
             	 <p >
             	Here you can make a request for consultation. You will recieve a quote via email once request has been made.<br/>You can request a free diagnostic for a technical problem. 
+                
             </p>  
         	</header>
             
             ";
     }
     public function setPageBodyFooter(){
-
+    $this->page_body_body .= "
+      <script>
+        alert('Making a request is not possible at the moment. Sorry for the inconvenience.');
+</script>
+    ";
     }
 }
 $p = new ConsultingPage();

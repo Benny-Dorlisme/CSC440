@@ -83,9 +83,9 @@ ini_set('display_errors',1);
        </section>";
 		}
 		public function setFooter(){
-		//	$connection = "mysql:host=db679312378.db.1and1.com;dbname=db679312378";
+			//$connection = "mysql:host=db679312378.db.1and1.com;dbname=db679312378";
             $connection = "mysql:host=192.168.1.15;dbname=portfolio;port=3306";
-						//$pdo = new PDO($connection,"dbo679312378","Real_numbers101!");
+					//	$pdo = new PDO($connection,"dbo679312378","Real_numbers101!");
             $pdo = new PDO($connection,"root","");
 						$stmt = $pdo->prepare("select * from comments");
 						
@@ -115,13 +115,15 @@ ini_set('display_errors',1);
            					<br>
            
           		 			<label for='comment' > Comment:</label>
-           					<input type='text' size='70' id='comment' name='comment' placeholder='Your comment' >
+          		 			<textarea rows='5' id='comment_box'  placeholder='Your comment' ></textarea>
+           					<input type='hidden' size='70'  name='comment' placeholder='Your comment' >
                             
 							<input type='button' id='submit_button' value='Comment' onClick='makeComment();'  >
            
            				</fieldset>
                         
            		</form>
+           		
                 
                 ";
                 			
@@ -131,6 +133,7 @@ ini_set('display_errors',1);
 							$last_name =$row['lastname'];
 							$comment =$row['comment'];
 							$time =$row['time'];
+                                $this->body .="<div class='comment'>";
 							$this->body .= "<h4 style='margin-left:30px; padding: 0px; display:inline;'>" ;
 							$this->body .=  strtoupper(substr($first_name,0,1)) ;
 							$this->body .= strtolower(substr($first_name,1,strlen($first_name)));
@@ -147,12 +150,13 @@ ini_set('display_errors',1);
 							$this->body .= "<b>Said...</b>";
 							$this->body .= $comment;
 							$this->body .= "</p>";
+                                $this->body .="</div>";
 							$first_name = null;
 							$last_name = null;
 							$comment = null;
 							$time = null;
 							}
-           $this->body .="</div>
+           $this->body .="</div></div>
             </section></div></section>";
 		}
 		public function printPage(){

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e285a895-bb49-48f8-b2ef-f4edec722fbc" name="1and1Server" url="http://home679310935.1and1-data.host">
+      <webServer id="e285a895-bb49-48f8-b2ef-f4edec722fbc" name="1and1Server" url="http://www.bennydorlisme.com">
         <fileTransfer host="home679310935.1and1-data.host" port="22" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />

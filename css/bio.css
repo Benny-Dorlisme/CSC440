@@ -1,0 +1,17 @@
+#portfolio_picture{
+	border-radius: 50%;
+	padding:1%;
+		margin-left:40%;
+}
+#portfolio_picture_container{
+	display: block;
+	width: 100%;
+
+	
+}
+#bio{
+	padding :13%;
+	text-shadow: -1px 0px 2px black;
+	font-size: 1.3em;
+	line-height: 3.5ex;
+}

@@ -92,3 +92,77 @@ function makeComment()
 
 }
 
+function sendText()
+{
+
+    var message = document.getElementById("mess").value;
+    var name = document.getElementById("senders_name").value;
+   document.getElementById("hidden_mess").value = message;
+    var t = document.getElementById("hidden_mess").value;
+
+        /*
+            if(!fname && !lname && !comment)
+            {
+                alert("You did not enter your first name, last name or comment.\n Please enter your first name, last name and comment.");
+                return false;
+            }
+            else if(!fname && !comment)
+            {
+                alert("You did not enter your first name or your comment.\n Please enter your first name and your comment.");
+                return false;
+            }
+            else if(!fname && !lname)
+            {
+                alert("your did not enter your first name or your last name.\n Please enter your first name and your last name.");
+                return false;
+            }
+            else if(!fname)
+            {
+                alert("You did not enter your first name.\n Please enter your first name.");
+                return false;
+            }
+            else if(!lname && !comment)
+            {
+                alert("You did not enter your last name or your comment.\n Please enter your last name and your comment.");
+                return false;
+            }
+            else if(!lname)
+            {
+                alert("You did not enter your last name.\n Please enter your last name.");
+                return false;
+            }
+            else if(!comment)
+            {
+                alert("You did not enter your comment.\n Please enter your comment.");
+                return false;
+            }
+
+        */
+
+
+
+
+    http_request.open("POST","sendtext.php?message=" + t + "&name=" + name,true);
+    http_request.send();
+    alert("sending your text");
+
+    http_request.onreadystatechange = function()
+    {
+
+        if(http_request.readyState == 4 && http_request.status == 200)
+        {
+
+
+
+
+
+
+
+            alert(http_request.responseText);
+
+
+        }
+    };
+
+
+}
