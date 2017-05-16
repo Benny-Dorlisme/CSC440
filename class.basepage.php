@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors',1);
+require_once("Forte.php");
 	class BasePage{
 
 		public $opening_html_tag   = "<html lang='en-US'>";
@@ -137,9 +137,9 @@ ini_set('display_errors',1);
        </section>";
 		}
 		public function setFooter(){
-			$connection = "mysql:host=db679312378.db.1and1.com;dbname=db679312378";
+
           //  $connection = "mysql:host=192.168.1.15;dbname=portfolio;port=3306";
-						$pdo = new PDO($connection,"dbo679312378","Real_numbers101!");
+						$pdo = new PDO(DB_CONNECTION,DB_USERNAME,DB_PASSWORD);
           //  $pdo = new PDO($connection,"root","");
 						$stmt = $pdo->prepare("select * from comments");
 						

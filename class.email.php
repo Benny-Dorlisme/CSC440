@@ -1,6 +1,6 @@
 <?php
 require_once("phpmailer/class.phpmailer.php");
-
+require_once("Forte.php");
 class EMail{
 	
 	private $sender = null;
@@ -21,9 +21,9 @@ public function sendEmail($subject,$message){
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Port = 25;
 	$mail->Username = '	me@bennydorlisme.com';                            // SMTP username
-	$mail->Password = 'Real_numbers101!';
-	//$mail->Username = 'bennydorlisme@gaming-for-glory.com';                            // SMTP username
-	//$mail->Password = 'Rakande101';                           // SMTP password
+	$mail->Password =  EMAIL_PASSWORD;
+	                           // SMTP username
+                         // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
     $mail->SMTPDebug = 2;                               //debug info
 	$mail->From = $this->sender;
