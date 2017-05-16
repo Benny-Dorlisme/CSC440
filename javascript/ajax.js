@@ -18,7 +18,7 @@ function makeComment()
 	
 	var lname = document.getElementById("lname").value;
 	
-	var comment = document.getElementById("comment").value;
+	var comment = document.getElementById("comment_box").value;
 	var year = date.year;
 	var month = date.month
 	var day = date.day

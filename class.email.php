@@ -19,15 +19,15 @@ public function sendEmail($subject,$message){
 	$mail->IsSMTP();                                      //Set mailer to use SMTP
 	$mail->Host = 'smtp.1and1.com';  // Specify main and backup server
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Port = 587;
+	$mail->Port = 25;
 	$mail->Username = '	me@bennydorlisme.com';                            // SMTP username
-	$mail->Password = 'Factoring_numbers101';
+	$mail->Password = 'Real_numbers101!';
 	//$mail->Username = 'bennydorlisme@gaming-for-glory.com';                            // SMTP username
 	//$mail->Password = 'Rakande101';                           // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
-   // $mail->SMTPDebug = 3;                               //debug info
+    $mail->SMTPDebug = 2;                               //debug info
 	$mail->From = $this->sender;
-	$mail->FromName = 'GameGlory';
+	$mail->FromName = '';
 	$mail->AddAddress($this->receiver);  // Add a recipient
 	//$mail->AddAddress('ellen@example.com');               // Name is optional
 	//$mail->AddReplyTo('info@example.com', 'Information');
@@ -45,7 +45,7 @@ public function sendEmail($subject,$message){
 	
 	if(!$mail->Send()) { // throw error here
 	   echo 'Message could not be sent.';
-	   //echo 'Mailer Error: ' . $mail->ErrorInfo;
+	   echo 'Mailer Error: ' . $mail->ErrorInfo;
 	   exit;
 	}else{
 		echo "Your text has been successfully sent to benny";

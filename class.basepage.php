@@ -30,16 +30,27 @@ ini_set('display_errors',1);
 			$this->head .= ("<!DOCTYPE html> 
 			" .$this->opening_html_tag);
 			$this->head .= $this->opening_header_tag;
+			$this->head .= "<meta name='description' content='Benny Dorlisme Portfolio Website'>";
+            $this->head .= "<meta name='author' content='Benny Dorlisme , me@BennyDorlisme.com'>";
+            $this->head .= "<meta name='keywords' content='BennyDorlisme , Benny , Dorlisme'>";
+            $this->head .= "<meta name='viewport' content='width=device-width'>";
+            $this->head .= "<meta charset='utf-8'>";
+
 			foreach($meta_data as $md){
 				$this->head .= $md;
 			}
+            $this->head .="<script src='jquery/jquery-3.2.1.js'></script>";
 			foreach($scripts as $s){
 				$this->head .= $s;
 			}
+            $this->head .= "<link type='text/css' rel='stylesheet' href='css/bootstrap-theme.css'>";
+            $this->head .= "<link type='text/css' rel='stylesheet' href='css/bootstrap.css'>";
 			foreach($links as $l){
 				$this->head .= $l;
 			}
-				
+				$this->head .="<link type='text/css' rel='stylesheet' href='css/index.css'>";
+
+
 			$this->head .= $this->closing_header_tag;
 			$this->body .= $this->opening_body_tag;
 			$this->setHeader();
@@ -53,40 +64,83 @@ ini_set('display_errors',1);
 		public function setHeader(){
 			
 			$this->body .= "<div id='page'>
-			 <section id='page_header'>
-    	<header id='page_header_header'>
-         
-        	<span>Welcome</span>
-        	 <nav id='social_network_buttons'>
-                        	<li><a href='https://www.facebook.com/benny.dorlisme.5'  target='_blank' title='FaceBook'><img src='img/fb.png'alt='FaceBook icon'/></a></li>
-                            <li><a href='http://www.youtube.com/channel/UCvHC0wCKLHfH3ZSF62_83pA' target='_blank' title='YouTube'><img src='img/yt.png' alt='YouTube icon'/></a></li>
-                            <li><a href='http://www.linkedin.com/pub/benny-dorlisme/24/2/890' target='_blank' title='LinkedIn'><img src='img/ln.png'alt='LinkedIn icon'/></a></li>
-                            <li><a href='https://plus.google.com/101507021089750723973/posts' target='_blank' title='Google Plus'><img src='img/gplus.png' alt='Google Plus icon'/></a></li>
-                            <li><a href='https://twitter.com/bennydorlisme ' target='_blank' title='Twitter'><img src='img/tw.png' alt='Twitter icon'/></a></li>
+			 <section id='page_header' >
+    	<header id='page_header_header' >
+            <div>
+        	<span >Welcome</span>
+        	
+        	 <nav id='social_network_buttons' >
+                        	<li >
+                        	<a href='https://www.facebook.com/benny.dorlisme.5'  target='_blank' title='FaceBook' >
+                        	    <img src='img/fb.png' alt='FaceBook icon' />
+                        	</a>
+                        	</li>
+                            <li >
+                            <a href='http://www.youtube.com/channel/UCvHC0wCKLHfH3ZSF62_83pA' target='_blank' title='YouTube' >
+                                <img src='img/yt.png' alt='YouTube icon' />
+                                </a>
+                                </li>
+                            <li >
+                            <a href='http://www.linkedin.com/pub/benny-dorlisme/24/2/890' target='_blank' title='LinkedIn' >
+                            <img src='img/ln.png'alt='LinkedIn icon'/>
+                            </a>
+                            </li>
+                            <li  >
+                            <a href='https://plus.google.com/101507021089750723973/posts' target='_blank' title='Google Plus'>
+                            <img src='img/gplus.png' alt='Google Plus icon' />
+                            </a>
+                            </li>
+                            <li>
+                            <a href='https://twitter.com/bennydorlisme ' target='_blank' title='Twitter' >
+                            <img src='img/tw.png' alt='Twitter icon' />
+                            </a>
+                            </li>
                        
-                    </nav>
+             </nav>
+          </div>
         </header>
-            <br/>
-            <footer id='page_header_footer'>
-        <nav id='header_nav'>
-            <li><a href='index.php?page=' rel='Benny Dorlisme home page'>Home </a></li>
-        	<li><a href='index.php?page=bio' rel='Benny Dorlisme biography page'>About Me </a></li>
-        	<li><a href='index.php?page=contact' rel='Get in contact with Benny Dorlisme'>Contact</a></li>
-            <li><a href='index.php?page=consulting' rel='Let Benny Dorlisme be your computer consultant'>Consulting</a></li>
-            <li><a href='index.php?page=othersites' rel='Other websites made by Benny Dorlisme'>Other Sites</a></li>
-           
-            </nav>
             
-
+            <footer id='page_header_footer' >
+            <div>
+        <nav id='header_nav' >
+            <li class='col-xs-offset-0'>
+                <a href='index.php?page=' rel='Benny Dorlisme home page'>
+                    Home 
+                </a>
+            </li>
+        	<li>
+        	    <a href='index.php?page=bio' rel='Benny Dorlisme biography page'>
+        	        About Me 
+        	     </a>
+        	</li>
+        	<li>
+        	    <a href='index.php?page=contact' rel='Get in contact with Benny Dorlisme'>
+        	        Contact
+        	    </a>
+        	</li>
+            <li>
+                <a href='index.php?page=consulting' rel='Let Benny Dorlisme be your computer consultant'>
+                    Consulting
+                </a>
+             </li>
+            <li>
+                <a href='index.php?page=othersites' rel='Other websites made by Benny Dorlisme'>
+                    Other Sites
+                </a>
+            </li>
+           
+        </nav>
+            
+</div>
            
         	</footer>
        </section>";
 		}
 		public function setFooter(){
-			//$connection = "mysql:host=db679312378.db.1and1.com;dbname=db679312378";
-            $connection = "mysql:host=192.168.1.15;dbname=portfolio;port=3306";
-					//	$pdo = new PDO($connection,"dbo679312378","Real_numbers101!");
-            $pdo = new PDO($connection,"root","");
+			$connection = "mysql:host=db679312378.db.1and1.com;dbname=db679312378";
+          //  $connection = "mysql:host=192.168.1.15;dbname=portfolio;port=3306";
+						$pdo = new PDO($connection,"dbo679312378","Real_numbers101!");
+          //  $pdo = new PDO($connection,"root","");
 						$stmt = $pdo->prepare("select * from comments");
 						
 						$stmt->execute(array_values(array()));

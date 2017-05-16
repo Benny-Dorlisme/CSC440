@@ -7,9 +7,9 @@ class ConsultingPage extends Page{
 
     public function __construct(){
 
-        $this->s = array("<script src='jquery/jquery-1.10.1.js'></script>" , "<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>","<script type='text/javascript' src='javascript/base.js'></script>");
+        $this->s = array("<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>","<script type='text/javascript' src='javascript/base.js'></script>","<script type='text/javascript' src='javascript/consulting.js'></script>");
         $this->l = array("<link type='text/css' rel='stylesheet' href='css/index.css'>","<link type='text/css' rel='stylesheet' href='css/consulting.css'>");
-        $this->m = array("<meta charset='utf-8'>","<meta content='https://www.bennydorlisme.com/' property='og:site_name'>"."<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='Benny Dorlisme Consutling'>","<meta name='keywords' content='Benny Dorlisme Tech'>");
+        $this->m = array();
         $this->setPageBodyHeader();
         $this->setPageBodyBody();
         $this->setPageBodyFooter();
@@ -33,33 +33,31 @@ class ConsultingPage extends Page{
                             </h4>
                         	</header>
                             </legend>
-                        		<label for='first_name'>
+                        		<label for='firstname'>
                         			First Name:
                         		</label>
-                        		<input type='text' id='first_name' placeholder='Enter your first name'name='first_name_for_comp_break_fix'>
+                        		<input type='text' id='first_name' placeholder='Enter your first name'name='firstname'>
                            
-                        		<br/>
-                        			<label for='last_name_for_comp_break_fix'>
+                        		
+                        			<label for='lastname'>
                         			Last Name:
                         		</label>
-                        		<input type='text' id='last_name_for_comp_break_fix' placeholder='Enter your last name'name='last_name_for_for_comp_break_fix'>
-                        		<br/>
-                          		<label for='email_for_comp_break_fix'>
+                        		<input type='text' id='last_name_for_comp_break_fix' placeholder='Enter your last name'name='lastname'>
+                        		
+                          		<label for='email'>
                         			Email:
                         		</label>
-                        		<input type='email' id='email_for_comp_break_fix'placeholder='ex. someone@somewhere.com' name='email_for_comp_break_fix'>
+                        		<input type='email' id='email_for_comp_break_fix' placeholder='someone@somewhere.com' name='email'>
                        
-                        		<br/>
-                        		<br/>
-                         		<label for='request_comment'>
+                        		
+                         		<label for='comment'>
                         			Request:
                         		</label>
-                                <textarea>
-                                
-                                </textarea>
-                                <input type='hidden' id='request_comment' name='request_comment' placeholder='' />
-                                <input type='submit' id='comp_break_fix_buttont' name='request_comment' placeholder='' />
-                     
+                                <textarea name='comment'></textarea>
+           
+                                   <input type='hidden' name='request' value='breakfix' />
+                                <input type='submit' id='breakfix_button' value='Request'/>
+                              
                        	</fieldset>
     
                        		</form >
@@ -74,32 +72,32 @@ class ConsultingPage extends Page{
                             </h4>
                         	</header>
                             </legend>
-                        		<label for='first_name_for_dev'>
+                        		<label for='firstname'>
                         			First Name:
                         		</label>
-                        		<input type='text' id='first_name_for_dev' placeholder='Enter your first name'name='first_name_for_dev'>
+                        		<input type='text' id='first_name_for_dev' placeholder='Enter your first name'name='firstname'>
                            
-                        		<br/>
-                        		<label for='last_name_for_dev'>
+                        		
+                        		<label for='lastname'>
                         			Last Name:
                         		</label>
-                        		<input type='text' id='last_name_for_dev' placeholder='Enter your last name'name='last_name_for_dev'>
+                        		<input type='text' id='last_name_for_dev' placeholder='Enter your last name'name='lastname'>
                            
-                        		<br/>
-                          		<label for='email_for_dev'>
+                        	
+                          		<label for='email'>
                         			Email:
                         		</label>
-                        		<input type='email' id='email_for_dev'placeholder='ex. someone@somewhere.com'name='email_for_dev'>
+                        		<input type='email' id='email_for_dev'placeholder='someone@somewhere.com'name='email'>
                        
-                        		<br/>
                         	
-                         		<label for='issue_for_consulting'>
+                        	
+                         		<label for='comment'>
                         			Request:
                         		</label>
-                                <textarea> 
-                                
-                                </textarea>
-                        	 <input type='hidden' id='inqury_for_consulting' name='request_comment_for_dev' placeholder='' />
+                                <textarea name='comment'></textarea>
+                        	
+                        	  <input type='hidden' id='dev_request' name='request' value='dev'/>
+                        	  <input type='submit' id='dev_button' value='Request'/>
                                 </fieldset>
                             </form>
                             <div id='container_for_graphics_form' class='form_container'>
@@ -112,32 +110,31 @@ class ConsultingPage extends Page{
                             </h4>
                         	</header>
                             </legend>
-                        		<label for='first_name_for_graphics'>
+                        		<label for='firstname'>
                         			First Name:
                         		</label>
-                        		<input type='text' id='first_name_for_graphics' placeholder='Enter your first name' name='first_name_for_graphics'>
+                        		<input type='text' id='first_name_for_graphics' placeholder='Enter your first name' name='firstname'/>
                            
-                        		<br/>
-                        		<label for='last_name_for_graphics'>
+                        	
+                        		<label for='lastname'>
                         			Last Name:
                         		</label>
-                        		<input type='text' id='last_name_for_graphics' placeholder='Enter your last name' name='last_name_for_graphics'>
+                        		<input type='text' id='last_name_for_graphics' placeholder='Enter your last name' name='lastname'/>
                            
-                        		<br/>
-                          		<label for='email_for_graphics>
+                        		
+                          		<label for='email'>
                         			Email:
                         		</label>
-                        		<input type='email' id='email_for_dev'placeholder='ex. someone@somewhere.com'name='email_for_graphics'>
+                        		<input type='email' id='email_for_dev'placeholder='someone@somewhere.com'name='email'>
                        
-                        		<br/>
-                        		<br/>
-                         		<label for='request_for_graphics'>
+                        	
+                         		<label for='comment'>
                         			Request:
                         		</label>
-                                <textarea> 
-                                
-                                </textarea>
-                        	 <input type='hidden' id='request_for_graphics' name='request_comment_for_graphics' placeholder='' />
+                                <textarea name='comment'></textarea>
+                        	
+                        	 <input type='hidden' id='graphics_request' name='request' value='graphics' />
+                        	 <input type='submit' id='graphics_button' value='Request'/>
                                 </fieldset>
                             </form>
                         </div>";
@@ -155,11 +152,7 @@ class ConsultingPage extends Page{
             ";
     }
     public function setPageBodyFooter(){
-    $this->page_body_body .= "
-      <script>
-        alert('Making a request is not possible at the moment. Sorry for the inconvenience.');
-</script>
-    ";
+
     }
 }
 $p = new ConsultingPage();

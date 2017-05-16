@@ -158,10 +158,10 @@ class ResumePage extends Page{
 </svg>";
 	
 	public function __construct(){
+        $this->m = array();
+		$this->s = array("<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>", "<script type='text/javascript' src='javascript/resume.js'></script>");
+		$this->l = array("<link type='text/css' rel='stylesheet' href='css/svganimations.css'>", "<link type='text/css' rel='stylesheet' href='css/resume.css'>");
 
-		$this->s = array("<script src='jquery/jquery-1.10.1.js'></script>" , "<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>", "<script type='text/javascript' src='javascript/resume.js'></script>");		
-		$this->l = array("<link type='text/css' rel='stylesheet' href='css/index.css'>", "<link type='text/css' rel='stylesheet' href='css/svganimations.css'>", "<link type='text/css' rel='stylesheet' href='css/resume.css'>");
-		$this->m = array("<meta charset='utf-8'>","<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='computer programmer'");
 		$this->bubble_letters = new BubbleLetters();
 		$this->setPageBodyHeader();
 		$this->setPageBodyBody();
@@ -180,7 +180,7 @@ class ResumePage extends Page{
 		{$this->bubble_letters->makeWord("Technical Skills", 'technicalskills',"0 0 1150 190" , 110, null)}
 				<div id='technical_skills_menu'>
 					<div id='hardware_technical_skills_list' class='menu'>
-						<div >{$this->bubble_letters->makeWord("Hardware",'hardware', "0 0 1000 1" , 80, 200)}</div>
+						<div ><h3>Hardware</h3></div>
 						<p id='hardware_menu' >
 						 Troubleshoot and Install for PCs and Macs
 							
@@ -190,7 +190,7 @@ class ResumePage extends Page{
 						
 					</div>
 					<div id='software_technical_skills_list' class='menu'>
-						<div >{$this->bubble_letters->makeWord("Software", 'software',"0 0 1000 1" , 100, 200)}</div>
+						<div ><h3>Software</h3></div>
 						<p id='software_menu' >
 						   HTML, CSS, Javascript, MYSQL, C/C++, BASH unix scripting, Java, Windows Batch and Powershell scripting, Active Directory Domain Services, Windows Server, WAMP , VMWare, Hyper-V, etc...
 						</p>
@@ -203,7 +203,7 @@ class ResumePage extends Page{
 			{$this->bubble_letters->makeWord("Education", 'education',"0 0 1150 200" , 110, null)}
 			<div id='education_list'>
 					<div id='college_education_list' class='menu'>
-						<div >{$this->bubble_letters->makeWord("College", 'college', "0 0 1000 1" , 80, 200)}</div>
+						<div ><h3>College</h3></div>
 					
 						<a href='www.bmcc.cuny.edu'> Borough of Manhattan Community College (BMCC)</a>
 					
@@ -211,7 +211,7 @@ class ResumePage extends Page{
 						
 					</div>
 					<div id='secondary_education_list' class='menu'>
-						<div>{$this->bubble_letters->makeWord("Secondary", 'secondary',"0 0 1000 1" , 80, 200)}</div>
+						<div><h3>Secondary School</h3></div>
 					
 								<a href='https://perscholas.org/' target='_blank'>Per Scholas Institute for Technology</a>
 								<br/>
@@ -221,7 +221,7 @@ class ResumePage extends Page{
 					
 					</div>
 					<div id='highschool_education_list' class='menu'  >
-						<div >{$this->bubble_letters->makeWord("HighSchool", 'highschool',"0 0 1000 1" , 80, 200)}</div>
+						<div ><h3>High School</h3></div>
 					
 								<a href=''>South Brooklyn Community High School</a>
 							
@@ -235,7 +235,7 @@ class ResumePage extends Page{
 			<div id='gameglory_menu' class='menu'>
 			
 						<div >
-						{$this->bubble_letters->makeWord("gameglory",'gameglory', "0 0 1000 1" , 80, 200)}
+						<h3>GameGlory LLC</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Web Developer
@@ -263,7 +263,7 @@ class ResumePage extends Page{
 					</div>
 					<div id='apex_menu' class='menu'>
 						<div >
-						{$this->bubble_letters->makeWord("apex systems",'apexsystems', "0 0 1000 1" , 80, 200)}
+						<h3>Apex Systems Inc.</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Service Desk Analyst
@@ -292,7 +292,7 @@ class ResumePage extends Page{
 						
 					</div>
 					<div id='garyline_menu'class='menu' >
-						<div >{$this->bubble_letters->makeWord("GaryLine",'garyline', "0 0 1000 1" , 80, 200)}</div>
+						<h3 >Gary Plastic Packaging Corp.</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Help Desk Technician
@@ -330,7 +330,7 @@ class ResumePage extends Page{
 						</p>
 					</div>
 					<div id='instacart_menu' class='menu'>
-						<div >{$this->bubble_letters->makeWord("instacart", 'instacart',"0 0 1000 1" , 80, 200)}</div>
+						<h3>Instacart</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Shopper
@@ -353,7 +353,7 @@ class ResumePage extends Page{
 					</div>
 					
 					<div id='corporatecomputers_menu' class='menu' >
-						<a href='#' >{$this->bubble_letters->makeWord("corporate computers", 'corporatecomputers',"0 0 1000 1" , 80, 200)}</a>
+						<h3>Corporate Computers Inc</h3>
 						<p id='corporatecomputers_menu' >
 								<ul>
 									<li>
@@ -369,7 +369,7 @@ class ResumePage extends Page{
 						</p>
 					</div>
 					<div id='wnet_menu' class='menu'>
-						<a href='#' >{$this->bubble_letters->makeWord("wnet", 'wnet',"0 0 1000 1" , 80, 200)}</a>
+						<h3>NYC Public Media WNET</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Help Desk Technician
@@ -406,7 +406,7 @@ class ResumePage extends Page{
 						</p>
 					</div>
 					<div id='staples_menu' class='menu'>
-						<a href='#' >{$this->bubble_letters->makeWord("staples", 'staples',"0 0 1000 1" , 80, 200)}</a>
+						<h3>Staples Inc.</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			     Sales Associate / Easy Tech
@@ -437,7 +437,7 @@ class ResumePage extends Page{
 							10/2010 - 1/2011
 			</span>
 			</div>
-						<a href='#' >{$this->bubble_letters->makeWord("redemtech", 'redemtech',"0 0 1000 1" , 80, 200)}</a>
+						<h3>Redemtech</h3>
 						<p id='redemtech_menu' >
 								<ul>
 									<li>
@@ -458,7 +458,7 @@ class ResumePage extends Page{
 						</p>
 					</div>
 					<div id='hookproductions_menu' class='menu' >
-						<a href='#' >{$this->bubble_letters->makeWord("hook productions", 'hookproductions',"0 0 1000 1" , 80, 200)}</a>
+						<h3>Hook Productions</h3>
 						<div class='job_title_container'>
 			<span class='job_title'>
 			    Intern
@@ -486,7 +486,7 @@ class ResumePage extends Page{
 				</div>
 			
 		</div>
-			<svg id='right_arrow' onclick='Resume.toggleSectionVisibility(1)'  >
+			<svg id='right_arrow' onclick='Resume.toggleSectionVisibility(1)' >
 		
 		    <path style='fill:red;stroke:#000000;' d='m0 0 L100 50 L0 100z'/>
 	    </svg>
@@ -498,27 +498,43 @@ class ResumePage extends Page{
 	";
 	}
 	public function setPageBodyHeader(){
-		$this->page_body_header = "<section id='page_content'>
-		<header id='page_content_header'>
+		$this->page_body_header = "<section id='page_content' >
+		<header id='page_content_header' >
 		<div id='page_content_header_container'>
-		<div>
+
 			
 			
 			{$this->bubble_letters->makeWord("benny dorlisme", 'bennydorlisme' ,"0 0 1150 100" , null, 325)}
-			<div id='resume_contact_info'>
-			<a href='Dorlisme_Benny_Resume_IT.docx'> Download IT Resume </a>
+			<div id='resume_contact_info' >
+			<div id=''>
+			<a href='Dorlisme_Benny_Resume_IT.docx'> 
 			
-				<a href='Dorlisme_Benny_Resume_QA_Dev.docx'> Download QA/Dev Resume </a>
-				<br/>	
-				<span>251 Osborn St Brooklyn, NY 11212</span>
+				Download IT Resume
 			
-				<span>BennyDorlisme@gmail.com</span>
+			</a>
+			</div>
+			<div>
+				<a href='Dorlisme_Benny_Resume_QA_Dev.docx' >
 				
-				<div  > <a href='https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=4T7DVJY12MB15M8L' >{$this->a_plus_logo}</a> <a href='https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=4T7DVJY12MB15M8L'> {$this->net_plus_logo}</a>
+				 Download QA/Dev Resume 
+				
+				 </a>
+			</div>
+			<div>
+				<span>251 Osborn St Brooklyn, NY 11212</span>
+			</div>
+			<div>
+				<span>
+				BennyDorlisme@gmail.com
+				</span>
+				</div>
+				<div > 
+				<a href='https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=4T7DVJY12MB15M8L' >{$this->a_plus_logo}</a> 
+				<a href='https://www.certmetrics.com/comptia/public/transcript.aspx?transcript=4T7DVJY12MB15M8L'> {$this->net_plus_logo}</a>
 				</div>
 				
 			</div>
-		</div>
+
 		
 	</div>
 	</header>";

@@ -6,9 +6,9 @@ require_once("class.email.php");
 		
 		public function __construct(){
 			
-			$this->s = array("<script src='jquery/jquery-1.10.1.js'></script>" , "<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>");		
-		$this->l = array("<link type='text/css' rel='stylesheet' href='css/index.css'>","<link type='text/css' rel='stylesheet' href='css/contact.css'>");
-		$this->m = array("<meta charset='utf-8'>","<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='computer programmer'");
+			$this->s = array("<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>");
+		$this->l = array("<link type='text/css' rel='stylesheet' href='css/contact.css'>");
+		$this->m = array();
 	
 		$this->setPageBodyHeader();
 		$this->setPageBodyBody();
@@ -21,9 +21,9 @@ require_once("class.email.php");
 		<div id='page_content_header_container'>
 		<div id=''>
 		      	 <p>
-                        	Benny Dorlisme<br/>
-                            Technical Specialist<br/>
-                           <a href='mailto:bennydorlisme@gmail.com'>BennyDorlisme@gmail.com</a><br/>
+                        	Benny Dorlisme
+                            Technical Specialist
+                           <a href='mailto:bennydorlisme@gmail.com'>BennyDorlisme@gmail.com</a>
                             (929)-377-3969 
                         </p>
 		<p >
@@ -51,6 +51,7 @@ require_once("class.email.php");
                  <form action='' id='text_form' >
                  	<fieldset>
                 		<input id='senders_name' type='text' name='name' placeholder='Your name'>
+                		<br/>
                  		<textarea rows='5' cols='50' id='mess' placeholder=\"Your text message straight to Benny's phone\"></textarea>
                  		<input type='hidden' name='message' id='hidden_mess'/>
                  		<input type='button' value='text' onclick='sendText()' />

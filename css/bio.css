@@ -15,3 +15,11 @@
 	font-size: 1.3em;
 	line-height: 3.5ex;
 }
+#talking_bubble{
+	position:absolute;
+	fill:white;
+	stroke: black;
+	left:25%;
+	top:19%;
+	display: none;
+}

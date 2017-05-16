@@ -104,11 +104,7 @@ transform:translate(500px, 0px);
 #software #E_fill{
 	transform:translate(570px, 0px);
 }
-#page_content_header_container > div{
-		
-		width:30%;
-		margin:0px auto;
-	}
+
 	#left_arrow{
 		 filter: drop-shadow( -2px 1px 1px #000 );
 		 margin-left:3%;
@@ -130,24 +126,15 @@ transform:translate(500px, 0px);
 	filter: drop-shadow( 0px 0px 1px #000 );
 }
 
-#resume_contact_info{
-	
-	margin:0px;
-}
-#resume_contact_info > span{
-		margin-left:5%;
-	}
-	#resume_contact_info > span:nth-child(4n+1){
-		margin-left:15%;
-	}
+
+
+
 	#resume_contact_info > a{
-		margin-left:22%;
+
 		color:#E2231A;
 		font-weight:bolder;
 	}
-	#resume_contact_info > div{
-		padding-left:9%;
-	}
+
 	.resume_section > svg{
 
 	}
@@ -227,4 +214,39 @@ margin-left:5%
 [data-active_section='off']{
 	visibility:hidden;
 	position:absolute;
+}
+#page_content_header_container{
+
+	width:28%;
+	margin:0px auto;
+}
+#page_content_header_container .bubbleletter_word{
+
+
+	margin:0px auto;
+}
+#resume_contact_info div:nth-child(1){
+
+	width:45%;
+	margin:0px auto;
+}
+#resume_contact_info div:nth-child(2){
+
+	width:58%;
+	margin:0px auto;
+}
+#resume_contact_info div:nth-child(3){
+
+	width:70%;
+	margin:0px auto;
+}
+#resume_contact_info div:nth-child(4){
+
+	width:58%;
+	margin:0px auto;
+}
+#resume_contact_info div:nth-child(5){
+
+	width:70%;
+	margin:0px auto;
 }
