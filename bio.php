@@ -5,9 +5,9 @@ require_once("class.page.php");
 		
 		public function __construct(){
 			
-			$this->s = array("<script src='jquery/jquery-1.10.1.js'></script>" , "<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>");		
-		$this->l = array("<link type='text/css' rel='stylesheet' href='css/index.css'>","<link type='text/css' rel='stylesheet' href='css/bio.css'>");
-		$this->m = array("<meta charset='utf-8'>","<meta name='description' content='Benny Dorlisme Portfolio Website'>","<meta name='keywords' content='Benny Dorlisme'>","<meta name='keywords' content='Dorlisme'","<meta name='keywords' content='computer programmer'");
+			$this->s = array("<script type='text/javascript' src='javascript/date.js'></script>" ,"<script type='text/javascript' src='javascript/ajax.js'></script>");
+		$this->l = array("<link type='text/css' rel='stylesheet' href='css/bio.css'>");
+		$this->m = array();
 	
 		$this->setPageBodyHeader();
 		$this->setPageBodyBody();
@@ -19,7 +19,15 @@ require_once("class.page.php");
 		<header id='page_content_header'>
 		<div id='page_content_header_container'>
 		<div id='portfolio_picture_container'>
-		
+		<svg id='talking_bubble'>
+		<g>
+			<path d='M230,90 C100,260 0,-100 310,50 Z'/>
+			<text x='140' y='90'>
+			Hi.
+</text>
+			</g>
+			
+		</svg>
 			<img id='portfolio_picture' src='img/benny.jpg' title='Picture of Benny Dorlisme' alt='Picture of Benny Dorlisme'/>
 				
 			
